@@ -16,3 +16,16 @@ nav {
 nav a{
   color: white;
 }
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.about h2{
+  text-align: center;
+}
+
+.about section{
+  border: 2px solid black; /* Adds a border around each section */ padding: 1em; /* Adds some space inside each border */ margin: 1em; /* Adds space between each section */  
+}
