@@ -1,7 +1,8 @@
 *{font-family:"Roboto",'Courier New', Courier, monospace;}
+:root{--blue: rgb(79, 160, 227); }
 
 header {
-    background-color: rgb(79, 160, 227);
+    background-color: var(--blue);
     text-align: center;
   }
 
@@ -24,8 +25,25 @@ nav a{
 
 .about h2{
   text-align: center;
+  margin: 0;
 }
 
 .about section{
-  border: 2px solid black; /* Adds a border around each section */ padding: 1em; /* Adds some space inside each border */ margin: 1em; /* Adds space between each section */  
+  border: 2px solid black;
+  padding-bottom: 1em; 
+  margin: 1em; 
+}
+
+#webcert{
+  text-align: center;
+  border: 2px solid black;
+  margin: 1em; 
+}
+
+#webcert h2{
+  margin: 0;
+}
+
+h2{
+  background-color: var(--blue);
 }
