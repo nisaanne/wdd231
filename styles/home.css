@@ -24,10 +24,18 @@ nav a{
   margin: 0;
 }
 
+.about img{
+  padding:1em;
+}
+
 .about section{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
   border: 2px solid black;
-  padding-bottom: 1em; 
+  place-self: center; 
   margin: 1em; 
+  
 }
 
 #webcert{
@@ -59,4 +67,8 @@ h2{
   border-radius: 50%; 
 }
 
-footer{justify-items: center;}
+footer{justify-items: center;
+background-color: var(--blue);}
+
+.primary{
+  padding:0 4em 0 4em;}
