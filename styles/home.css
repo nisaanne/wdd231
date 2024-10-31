@@ -1,0 +1,18 @@
+*{font-family:"Roboto",'Courier New', Courier, monospace;}
+
+header {
+    background-color: rgb(79, 160, 227);
+    text-align: center;
+  }
+
+nav {
+    display: flex;
+    background-color: black;
+    padding: 1em;
+    text-align: center;
+    justify-content: space-evenly;
+   }
+
+nav a{
+  color: white;
+}
