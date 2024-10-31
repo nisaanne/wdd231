@@ -1,10 +1,6 @@
 *{font-family:"Roboto",'Courier New', Courier, monospace;}
 :root{--blue: rgb(79, 160, 227); }
 
-header {
-    background-color: var(--blue);
-    text-align: center;
-  }
 
 nav {
     display: flex;
@@ -47,3 +43,20 @@ nav a{
 h2{
   background-color: var(--blue);
 }
+
+.profile {
+  background-color: var(--blue);
+  display: flex;
+  align-items: center; 
+  gap: 1em; 
+  justify-content: center;
+  padding: 1em;
+}
+
+.profile img {
+  width: 100px; 
+  height: auto; 
+  border-radius: 50%; 
+}
+
+footer{justify-items: center;}
