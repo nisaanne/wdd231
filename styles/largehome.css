@@ -1,4 +1,26 @@
 @media (min-width: 768px) {.about{
     grid-template-columns: 2fr 1fr;
 }
+
+.navigation{
+    display:flex;
+    
+}
+.navigation li{
+    display: block;
+    flex: 1 1 100%;
+    
+}
+.navigation a {
+    text-align: center;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    display: block;
+    
+}
+#menu {
+    display: none;
+}
+
 }
