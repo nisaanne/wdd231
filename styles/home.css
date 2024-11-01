@@ -107,10 +107,15 @@ nav {
 
 .navigation li {
   display: none;
+  padding: .5em;
 }
 
 .navigation a{
   color: white;
+  display: block;
+
+  
+  
 }
 
 .navigation a:hover{
