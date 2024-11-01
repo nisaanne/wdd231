@@ -86,7 +86,7 @@ footer {
   font-weight: 700;
   text-decoration: none;
   padding: 0.5rem 0.75rem;
-  background-color: black;
+  background-color: var(--blue);
   color: white;
 }
 
@@ -95,7 +95,7 @@ footer {
 }
 
 nav {
-  background-color: black;
+  background-color: var(--blue);
 }
 
 .navigation {
