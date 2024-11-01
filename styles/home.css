@@ -16,12 +16,17 @@ nav a{
 
 .about {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
+  justify-content: center;
+  width: 90%;
+  margin: 1em auto;
+  gap: 1em;
 }
 
 .about h2{
   text-align: center;
   margin: 0;
+  width: 100%;
 }
 
 .about img{
@@ -33,15 +38,23 @@ nav a{
   flex-direction: column;
   align-items: center;
   border: 2px solid black;
+  border-radius: 15px;
   place-self: center; 
-  margin: 1em; 
-  
+  margin: .5em; 
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
 }
 
 #webcert{
   text-align: center;
   border: 2px solid black;
-  margin: 1em; 
+  border-radius: 15px;
+  margin: 1em;
+  width: 90%; 
+  margin: 1em auto;
+  overflow: hidden;
+  
 }
 
 #webcert h2{
