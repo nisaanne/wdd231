@@ -102,32 +102,24 @@ nav {
   list-style: none;
   margin: 0 auto;
   max-width: 760px;
+  
 }
 
 .navigation li {
   display: none;
 }
 
-.navigation a {
-  color: black;
-  text-align: center;
-  display: block;
-  width: 100%;
+.navigation a{
+  color: white;
 }
 
-.navigation a:hover, .navigation a:active, .show .navigation a:hover, .show .navigation a:active {
-  color: white;
+.navigation a:hover{
+  color: rgb(175, 45, 45);
   background-color: black;
 }
 
 .show li {
   display: block;
-}
-
-.show a {
-  color: white;
-  display: block;
-  width: 100%;
 }
 
 #menu.show::before {
