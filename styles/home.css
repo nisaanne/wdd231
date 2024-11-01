@@ -119,8 +119,8 @@ nav {
 }
 
 .navigation a:hover{
-  color: rgb(175, 45, 45);
-  background-color: black;
+  color: var(--blue);
+  background-color: white;
 }
 
 .show li {
