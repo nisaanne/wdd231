@@ -16,7 +16,7 @@ nav a{
 
 .about {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr;
   justify-content: center;
   width: 90%;
   margin: 1em auto;

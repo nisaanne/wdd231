@@ -1,0 +1,4 @@
+@media (min-width: 768px) {.about{
+    grid-template-columns: 2fr 1fr;
+}
+}
