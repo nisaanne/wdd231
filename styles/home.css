@@ -166,6 +166,7 @@ nav {
   padding: 1em;
   width:10em;
   gap: 10em;
+  cursor: pointer; 
   
 }
 
