@@ -102,7 +102,6 @@ nav {
   list-style: none;
   margin: 0 auto;
   max-width: 760px;
-  
 }
 
 .navigation li {
@@ -130,3 +129,38 @@ nav {
 #menu.show::before {
   content: "X";
 }
+
+#course-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 2em; 
+  margin: 3em;
+}
+
+#course-buttons button {
+  padding: 10px; 
+  font-size: 0.8em; 
+  background-color: #4CAF50; 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  text-align: center; 
+}
+
+#course-buttons button:hover {
+  background-color: #118e17; 
+}
+
+#filter-buttons button{
+  background-color: grey;
+  color: white;
+  padding: 1em;
+  width:10em;
+  gap: 10em;
+  
+}
+
+#course-buttons .completed { background-color: #a0457a;} 
+#course-buttons .not-completed { background-color: #4CAF50;}
+
