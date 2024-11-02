@@ -23,4 +23,13 @@
     display: none;
 }
 
+#course-buttons {
+    grid-template-columns: repeat(3, 1fr); 
+
+}
+
+#filter-buttons{
+    display: contents;
+    justify-items: center;
+  }
 }

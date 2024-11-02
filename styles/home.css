@@ -132,7 +132,7 @@ nav {
 
 #course-buttons {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
+  grid-template-columns: repeat(1fr); 
   gap: 2em; 
   margin: 3em;
 }
@@ -152,6 +152,14 @@ nav {
   background-color: #118e17; 
 }
 
+#filter-buttons{
+  display: grid;
+  grid-template-columns: repeat(1fr); 
+  gap: 2em; 
+  margin: 3em;
+  justify-content: center;
+}
+
 #filter-buttons button{
   background-color: grey;
   color: white;
@@ -161,6 +169,8 @@ nav {
   
 }
 
-#course-buttons .completed { background-color: #a0457a;} 
-#course-buttons .not-completed { background-color: #4CAF50;}
+#filter-buttons button:hover {
+  background-color: rgb(72, 68, 68); 
+}
+
 
