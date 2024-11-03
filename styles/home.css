@@ -152,7 +152,7 @@ nav {
 }
 
 #course-buttons button:hover {
-  background-color: rgb(68, 64, 64); 
+  background-color: var(--blue); 
 }
 
 
