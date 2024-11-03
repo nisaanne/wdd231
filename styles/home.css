@@ -83,38 +83,41 @@ footer {
 #menu {
   display: block;
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: bolder;
+  font-size: 700;
   text-decoration: none;
   padding: 0.5rem 0.75rem;
   background-color: var(--blue);
-  color: white;
+  
 }
 
 #menu::before {
   content: "☰";
+  color: black;
 }
 
 nav {
   background-color: var(--blue);
+  color: black;
 }
 
 .navigation {
+  background-color: var(--blue);
   list-style: none;
   margin: 0 auto;
   max-width: 760px;
+  color: black;
 }
 
 .navigation li {
   display: none;
   padding: .5em;
+  color: black;
 }
 
 .navigation a{
-  color: white;
   display: block;
-
-  
-  
+  color: black;
 }
 
 .navigation a:hover{
@@ -161,7 +164,7 @@ nav {
 }
 
 #filter-buttons button{
-  background-color: grey;
+  background-color: rgb(68, 64, 64);
   color: white;
   padding: 1em;
   width:10em;
@@ -175,4 +178,4 @@ nav {
 }
 
 #course-buttons .completed { background-color: #0e7236; }
-#course-buttons .not-completed { background-color: #4CAF50;}
+#course-buttons .not-completed { background-color: #054d2b;}
