@@ -132,7 +132,7 @@ nav {
 
 #course-buttons {
   display: grid;
-  grid-template-columns: repeat(1fr); 
+  grid-template-columns: 1fr; 
   gap: 2em; 
   margin: 3em;
 }
@@ -154,10 +154,10 @@ nav {
 
 #filter-buttons{
   display: grid;
-  grid-template-columns: repeat(1fr); 
+  grid-template-columns: 1fr; 
   gap: 2em; 
   margin: 3em;
-  justify-content: center;
+  justify-items: center;
 }
 
 #filter-buttons button{

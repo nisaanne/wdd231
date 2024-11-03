@@ -99,16 +99,16 @@
 const buttonContainer = document.getElementById('course-buttons');
 
 const displayButtons = (filteredCourses) => {
-    buttonContainer.innerHTML = ''; // Clear previous buttons
+    buttonContainer.innerHTML = ''; 
     filteredCourses.forEach(course => {
         const button = document.createElement('button');
         button.innerText = course.title;
-        button.className = course.completed ? 'completed' : 'not-completed'; // Apply appropriate class
+        button.className = course.completed ? 'completed' : 'not-completed'; 
         buttonContainer.appendChild(button);
     });
 };
 
-// Filter Buttons
+
 const allBtn = document.getElementById('filter-all');
 const cseBtn = document.getElementById('filter-cse');
 const wddBtn = document.getElementById('filter-wdd');
@@ -123,7 +123,7 @@ wddBtn.addEventListener('click', () => {
     displayButtons(wddCourses);
 });
 
-// Initial display of all courses
+
 displayButtons(courses);
 
 
