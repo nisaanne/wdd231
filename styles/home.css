@@ -151,7 +151,7 @@ nav {
 }
 
 #course-buttons button:hover {
-  background-color: var(--blue); 
+  background-color: rgb(52, 148, 33); 
 }
 
 
@@ -169,5 +169,5 @@ nav {
   background-color: rgb(52, 148, 33); 
 }
 
-#course-buttons .completed { background-color: #0e7236; }
+#course-buttons .completed { background-color: rgb(29, 27, 185) }
 #course-buttons .not-completed { background-color: #054d2b;}
