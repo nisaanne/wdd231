@@ -152,16 +152,9 @@ nav {
 }
 
 #course-buttons button:hover {
-  background-color: #011303; 
+  background-color: rgb(68, 64, 64); 
 }
 
-#filter-buttons{
-  display: grid;
-  grid-template-columns: 1fr; 
-  gap: 2em; 
-  margin: 3em;
-  justify-items: center;
-}
 
 #filter-buttons button{
   background-color: rgb(68, 64, 64);
