@@ -174,4 +174,5 @@ nav {
   background-color: rgb(72, 68, 68); 
 }
 
-
+#course-buttons .completed { background-color: #0e7236; }
+#course-buttons .not-completed { background-color: #4CAF50;}

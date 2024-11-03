@@ -95,13 +95,36 @@
     }
 ]
 
+
 const buttonContainer = document.getElementById('course-buttons');
 
-courses.forEach(course => {
-    const button = document.createElement('button');
-    button.innerText = course.title;
-    buttonContainer.appendChild(button);
+const displayButtons = (filteredCourses) => {
+    buttonContainer.innerHTML = ''; // Clear previous buttons
+    filteredCourses.forEach(course => {
+        const button = document.createElement('button');
+        button.innerText = course.title;
+        button.className = course.completed ? 'completed' : 'not-completed'; // Apply appropriate class
+        buttonContainer.appendChild(button);
+    });
+};
+
+// Filter Buttons
+const allBtn = document.getElementById('filter-all');
+const cseBtn = document.getElementById('filter-cse');
+const wddBtn = document.getElementById('filter-wdd');
+
+allBtn.addEventListener('click', () => displayButtons(courses));
+cseBtn.addEventListener('click', () => {
+    const cseCourses = courses.filter(course => course.subject === 'CSE');
+    displayButtons(cseCourses);
 });
+wddBtn.addEventListener('click', () => {
+    const wddCourses = courses.filter(course => course.subject === 'WDD');
+    displayButtons(wddCourses);
+});
+
+// Initial display of all courses
+displayButtons(courses);
 
 
 
