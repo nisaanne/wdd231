@@ -120,7 +120,7 @@ nav {
 }
 
 .navigation a:hover{
-  color: var(--blue);
+  color: black;
   background-color: white;
 }
 
