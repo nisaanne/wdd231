@@ -126,10 +126,10 @@ wddBtn.addEventListener('click', () => {
 
 displayButtons(courses);
 
-const completedCourses = courses.filter(course => course.completed);
-const totalCredits = completedCourses.reduce((sum, course) => sum + course.credits, 0);
 
-document.getElementById('total-credits').innerText = `Total Credits Earned from Completed Courses: ${totalCredits}`;
+const totalCredits = courses.reduce((sum, course) => sum + course.credits, 0);
+
+document.getElementById('total-credits').innerText = `Total Required Credits: ${totalCredits}`;
 
 
 
