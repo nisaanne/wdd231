@@ -171,3 +171,9 @@ nav {
 
 #course-buttons .completed { background-color: rgb(29, 27, 185) }
 #course-buttons .not-completed { background-color: #054d2b;}
+
+.active { 
+ font-style: italic;
+ font-weight: bolder; 
+ font-size: larger;
+}
