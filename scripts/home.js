@@ -97,6 +97,7 @@
 
 
 const buttonContainer = document.getElementById('course-buttons');
+const totalCreditsElement = document.getElementById('total-credits');
 
 const displayButtons = (filteredCourses) => {
     buttonContainer.innerHTML = ''; 
@@ -106,6 +107,8 @@ const displayButtons = (filteredCourses) => {
         button.className = course.completed ? 'completed' : 'not-completed'; 
         buttonContainer.appendChild(button);
     });
+    const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0); 
+    totalCreditsElement.innerText = `Total Required Credits: ${totalCredits}`;
 };
 
 
@@ -127,9 +130,7 @@ wddBtn.addEventListener('click', () => {
 displayButtons(courses);
 
 
-const totalCredits = courses.reduce((sum, course) => sum + course.credits, 0);
 
-document.getElementById('total-credits').innerText = `Total Required Credits: ${totalCredits}`;
 
 
 
