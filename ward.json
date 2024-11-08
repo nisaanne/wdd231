@@ -1,0 +1,15 @@
+
+
+    {
+        "Family name": "Smith",
+        "MoveInDate":"03/10/22",
+        "NumberOfRecords": "6",
+        "VistedByBishopric": false,
+        "familyMembers": [
+        {
+            "name": "Jane",
+            "Gender": "female",
+            "Birthdate": "03/26/15"
+        }]
+
+    }
