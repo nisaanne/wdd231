@@ -1,0 +1,14 @@
+:root {
+    --blue: rgb(79, 160, 227);
+  }
+
+
+  header,footer {
+    background-color: var(--blue);
+}
+
+footer { display: flex; 
+justify-content: space-evenly;
+align-items: center; 
+padding: 10px; }
+
