@@ -97,36 +97,43 @@ footer {
 
 nav {
   background-color: var(--blue);
-  color: black;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul{
+  overflow: hidden;
+}
+
+nav.show{
+  grid-template-rows: 1fr;
 }
 
 .navigation {
-  background-color: var(--blue);
   list-style: none;
   margin: 0 auto;
   max-width: 760px;
   color: black;
+
 }
 
 .navigation li {
-  display: none;
+  /* display: none; */
   padding: .5em;
-  color: black;
 }
 
 .navigation a{
-  display: block;
   color: black;
 }
 
 .navigation a:hover{
-  color: black;
-  background-color: white;
+ background-color: white;
 }
 
-.show li {
+/* .show li {
   display: block;
-}
+} */
 
 #menu.show::before {
   content: "X";

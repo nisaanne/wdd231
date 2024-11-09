@@ -18,6 +18,10 @@
     display: block;
     
 }
+
+nav{
+    grid-template-rows: 1fr;
+}
 #menu {
     display: none;
 }

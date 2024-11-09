@@ -5,7 +5,7 @@
     let lastModifiedDate = document.lastModified;
     document.getElementById("lastModified").textContent = "This document was last modified on: " + lastModifiedDate;
   
-    const mainnav = document.querySelector(".navigation")
+    const mainnav = document.querySelector("#animateme")
     const hambutton = document.querySelector("#menu");
 
     hambutton.addEventListener("click", () =>{
