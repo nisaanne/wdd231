@@ -4,6 +4,7 @@
 
 .navigation{
     display:flex;
+    align-items:baseline;
     
 }
 .navigation li{
@@ -14,7 +15,6 @@
 .navigation a {
     text-align: center;
     padding: 1em;
-    text-align: center;
     display: block;
     
 }

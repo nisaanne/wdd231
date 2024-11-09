@@ -85,7 +85,7 @@ footer {
   font-size: 2rem;
   font-weight: bolder;
   text-decoration: none;
-  padding: 0.5rem 0.75rem;
+  padding: 1rem 0.75rem;
   background-color: var(--blue);
   
 }
@@ -119,7 +119,6 @@ nav.show{
 }
 
 .navigation li {
-  /* display: none; */
   padding: .5em;
 }
 
@@ -130,10 +129,6 @@ nav.show{
 .navigation a:hover{
  background-color: white;
 }
-
-/* .show li {
-  display: block;
-} */
 
 #menu.show::before {
   content: "X";
