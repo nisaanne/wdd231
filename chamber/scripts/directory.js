@@ -7,6 +7,8 @@ document.getElementById("lastModified").textContent = "This document was last mo
 document.addEventListener("DOMContentLoaded", () => {
     const membersContainer = document.getElementById("members-container");
     const toggleButton = document.getElementById("toggle-view");
+    const gridIcon = document.getElementById("grid-icon");
+    const listIcon = document.getElementById("list-icon");
     let isGridView = false;
 
     async function fetchMembers() {
@@ -41,9 +43,13 @@ document.addEventListener("DOMContentLoaded", () => {
         if (isGridView) {
             membersContainer.classList.add('member-grid');
             membersContainer.classList.remove('member-list');
+            gridIcon.style.display = 'inline';
+            listIcon.style.display = 'none';
         } else {
             membersContainer.classList.add('member-list');
             membersContainer.classList.remove('member-grid');
+            gridIcon.style.display = 'none';
+            listIcon.style.display = 'inline';
         }
     }
 

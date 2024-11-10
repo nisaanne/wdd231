@@ -88,13 +88,7 @@ padding: 10px; }
     margin: 10px 0; 
     background-color: #f9f9f9; }
 
-/* #members-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-items: center;
-} */
 
-/* Styles for list view */
 .member-list {
     display: block;
 }
@@ -116,4 +110,9 @@ padding: 10px; }
     border: 1px solid #ccc;
     padding: 10px;
     background-color: #f9f9f9;
+}
+
+#toggle-view{
+    margin: 1em;
+    
 }
