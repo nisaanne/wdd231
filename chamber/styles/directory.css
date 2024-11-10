@@ -94,7 +94,7 @@ padding: 10px; }
 /* Styles for grid view */
 .member-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 20px;
 }
 
@@ -115,4 +115,9 @@ padding: 10px; }
 
 .social-icon {
     width: 3em;
+}
+
+@media (min-width: 768px) {.member-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 }
