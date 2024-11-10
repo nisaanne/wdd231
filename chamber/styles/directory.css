@@ -64,7 +64,7 @@ padding: 10px; }
 }
 
 .navigation a:hover{
-    background-color: aquamarine;
+    background-color: rgb(71, 205, 116);
 }
 
 .navigation .active { 
@@ -91,7 +91,7 @@ padding: 10px; }
     background-color: transparent;
 }
 
-/* Styles for grid view */
+
 .member-grid {
     display: grid;
     grid-template-columns: 1fr;
