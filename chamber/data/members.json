@@ -4,7 +4,7 @@
         "Address": "3201 J Street",
         "Phone number": "555-1111",
         "Website": "www.diamondcleaners.com",
-        "Image": "images/ycicon.webp",
+        "Image": "images/cleaning.webp",
         "Membership level": "3"
     },
     {
@@ -12,7 +12,7 @@
         "Address": "800 Main Street",
         "Phone number": "555-2222",
         "Website": "www.jeffsfrezette.com",
-        "Image": "images/ycicon.webp",
+        "Image": "images/icecream.webp",
         "Membership level": "1"
     },
     {
@@ -20,7 +20,7 @@
         "Address": "9445 Bravo Way",
         "Phone number": "555-3333",
         "Website": "www.cakelady.com",
-        "Image": "images/ycicon.webp",
+        "Image": "images/cupcakes.webp",
         "Membership level": "2"
     },
     {
@@ -28,7 +28,7 @@
         "Address": "22 Columbus Blvd",
         "Phone number": "555-4444",
         "Website": "www.masseyauto.com",
-        "Image": "images/ycicon.webp",
+        "Image": "images/car.webp",
         "Membership level": "1"
     },
     {
@@ -36,7 +36,7 @@
         "Address": "15 Acacia Blvd",
         "Phone number": "555-5555",
         "Website": "www.sutterercutpizzeria.com",
-        "Image": "images/ycicon.webp",
+        "Image": "images/pizza.webp",
         "Membership level": "2"
     },
     {
@@ -44,7 +44,7 @@
         "Address": "100 Acacia Blvd",
         "Phone number": "555-6666",
         "Website": "www.frenchwhisk.com",
-        "Image": "images/ycicon.webp",
+        "Image": "images/pancakes.webp",
         "Membership level": "3"
     },
     {
@@ -52,7 +52,7 @@
         "Address": "245 Main Street",
         "Phone number": "555-7777",
         "Website": "www.jennyonthego.com",
-        "Image": "images/ycicon.webp",
+        "Image": "images/dog.webp",
         "Membership level": "1"
     },
     {
@@ -60,7 +60,7 @@
         "Address": "18 Bridge Street",
         "Phone number": "555-8888",
         "Website": "www.diamondcleaners.com",
-        "Image": "images/ycicon.webp",
+        "Image": "images/rings.webp",
         "Membership level": "2"
     }
 
