@@ -88,8 +88,32 @@ padding: 10px; }
     margin: 10px 0; 
     background-color: #f9f9f9; }
 
-#members-container{
+/* #members-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
+} */
+
+/* Styles for list view */
+.member-list {
+    display: block;
+}
+
+.member-list .member {
+    border: none;
+    padding: 10px 0;
+    background-color: transparent;
+}
+
+/* Styles for grid view */
+.member-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.member-grid .member {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
 }
