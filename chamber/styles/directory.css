@@ -67,9 +67,17 @@ padding: 10px; }
     color: white;
     text-decoration: none;
     font-size: 1.2em;
-    padding: 5em;
+    margin: 3em;
+    padding: 1em;
 }
 
-.navigation a:hover, .navigation a.active {
-    text-decoration: underline;
+.navigation a:hover{
+    background-color: aquamarine;
 }
+
+.navigation .active { 
+    font-style: italic;
+    font-weight: bolder; 
+    font-size: larger;
+    text-decoration: underline;
+   }
