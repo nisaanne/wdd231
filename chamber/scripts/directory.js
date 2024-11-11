@@ -61,11 +61,10 @@ document.addEventListener("DOMContentLoaded", () => {
     fetchMembers();
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('nav-links');
+const mainnav = document.querySelector("#animateme")
+const hambutton = document.querySelector("#menu");
 
-    hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-    });
+hambutton.addEventListener("click", () =>{
+  mainnav.classList.toggle("show");
+  hambutton.classList.toggle("show");  
 });
