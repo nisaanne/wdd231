@@ -42,40 +42,6 @@ footer {
     font-size: 1.5em;
     font-weight: normal;
 }
-
-.member {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px 0;
-    background-color: #f9f9f9;
-}
-
-.member-list {
-    display: block;
-}
-
-.member-list .member {
-    border: none;
-    padding: 10px 0;
-    background-color: transparent;
-}
-
-.member-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-}
-
-.member-grid .member {
-    border: 1px solid #ccc;
-    padding: 10px;
-    background-color: #f9f9f9;
-}
-
-#toggle-view {
-    margin: 1em;
-}
-
 .yctitle img {
     height: 100px;
 }
@@ -166,14 +132,6 @@ nav.show {
     cursor: pointer;
     margin-left: auto;
 }
-
-.bar {
-    width: 25px;
-    height: 3px;
-    margin: 4px 0;
-    background-color: #fff;
-}
-
 
 @media (min-width: 768px) {
     .navigation {
