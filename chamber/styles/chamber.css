@@ -133,6 +133,28 @@ nav.show {
     margin-left: auto;
 }
 
+.hero {
+    position: relative;
+    width: 100%;
+    height: 600px; /* Adjust the height as needed */
+    overflow: hidden;
+    margin: 0; /* Ensure no margin is around the hero section */
+    padding: 0; /* Ensure no padding is around the hero section */
+}
+
+.hero img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container */
+    margin: 0; /* Ensure no margin is around the image */
+    padding: 0; /* Ensure no padding is around the image */
+    z-index: -1;
+}
+
 @media (min-width: 768px) {
     .navigation {
         display: flex;
@@ -166,4 +188,10 @@ nav.show {
     .member-grid{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-}
+
+    
+    }
+    
+    
+    
+    
