@@ -3,10 +3,10 @@ const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
 const myKey = "05af6ab2e391031ce939791e499633e2";
-const myLat = '49.75';
-const myLon = '6.64';
+const myLat = '39.14';
+const myLon = '-121.62';
 
-// Correcting the URL interpolation
+
 const myURL = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLon}&appid=${myKey}&units=imperial`;
 
 async function apiFetch() {
@@ -14,8 +14,8 @@ async function apiFetch() {
       const response = await fetch(myURL);
       if (response.ok) {
         const data = await response.json();
-        console.log(data); // testing only
-        displayResults(data); // uncomment when ready
+        console.log(data);
+        displayResults(data); 
       } else {
           throw Error(await response.text());
       }
