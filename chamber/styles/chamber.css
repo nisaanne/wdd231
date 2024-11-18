@@ -189,7 +189,7 @@ h3:hover {
 
 .title {
     background-color: var(--blue); 
-    color: white; 
+    color: black; 
     padding: 10px;
     border-radius: 5px 5px 0 0; 
     margin: 0; 
@@ -228,7 +228,7 @@ h3:hover {
 .spotlight-card h3 {
     margin-top: 0;
     font-size: 1.5em;
-    color: var(--blue);
+    color: #0000ee;
     margin-bottom: 10px;
 }
 
@@ -239,7 +239,7 @@ h3:hover {
 }
 
 .spotlight-card a {
-    color: var(--blue);
+    color: #0000ee;
     text-decoration: none;
     font-weight: bold;
 }
@@ -252,7 +252,7 @@ h3:hover {
     padding: 20px;
 }
 
-.spotlight-card h3:hover { background-color: inherit; /* Keep the original background color */ }
+.spotlight-card h3:hover { background-color: inherit;}
 
 @media (min-width: 768px) {
     .navigation {
