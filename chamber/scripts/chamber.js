@@ -130,7 +130,7 @@ function displaySpotlights(members) {
 
     eligibleMembers.sort(() => Math.random() - 0.5);
 
-    const selectedMembers = eligibleMembers.slice(0, Math.floor(Math.random() * 2) + 2);
+    const selectedMembers = eligibleMembers.slice(0, 3);
     console.log('Selected members:', selectedMembers); // Log the selected members
 
     selectedMembers.forEach(member => {
