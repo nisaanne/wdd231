@@ -126,12 +126,12 @@ function displaySpotlights(members) {
     spotlightContainer.innerHTML = '';
 
     const eligibleMembers = members.filter(member => member['Membership level'] === '2' || member['Membership level'] === '3');
-    console.log('Eligible members:', eligibleMembers); // Log the eligible members
+    console.log('Eligible members:', eligibleMembers); 
 
     eligibleMembers.sort(() => Math.random() - 0.5);
 
     const selectedMembers = eligibleMembers.slice(0, 3);
-    console.log('Selected members:', selectedMembers); // Log the selected members
+    console.log('Selected members:', selectedMembers); 
 
     selectedMembers.forEach(member => {
         const card = document.createElement('div');
