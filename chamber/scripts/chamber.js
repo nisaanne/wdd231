@@ -104,3 +104,69 @@ fetchForecast();
 setInterval(fetchCurrentWeather, 900000); 
 setInterval(fetchForecast, 900000); 
 
+
+async function fetchMembers() {
+    try {
+        const response = await fetch('data/members.json');
+        if (response.ok) {
+            const members = await response.json();
+            console.log('Members data:', members); 
+            displaySpotlights(members);
+        } else {
+            throw new Error('Failed to load members data');
+        }
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+
+function displaySpotlights(members) {
+    const spotlightContainer = document.getElementById('spotlight-container');
+    spotlightContainer.innerHTML = '';
+
+    const eligibleMembers = members.filter(member => member['Membership level'] === '2' || member['Membership level'] === '3');
+    console.log('Eligible members:', eligibleMembers); // Log the eligible members
+
+    eligibleMembers.sort(() => Math.random() - 0.5);
+
+    const selectedMembers = eligibleMembers.slice(0, Math.floor(Math.random() * 2) + 2);
+    console.log('Selected members:', selectedMembers); // Log the selected members
+
+    selectedMembers.forEach(member => {
+        const card = document.createElement('div');
+        card.classList.add('spotlight-card');
+
+        const logo = document.createElement('img');
+        logo.src = member.Image;
+        logo.alt = `${member['Company name']} logo`;
+        card.appendChild(logo);
+
+        const companyName = document.createElement('h3');
+        companyName.textContent = member['Company name'];
+        card.appendChild(companyName);
+
+        const phone = document.createElement('p');
+        phone.textContent = `Phone: ${member['Phone number']}`;
+        card.appendChild(phone);
+
+        const address = document.createElement('p');
+        address.textContent = `Address: ${member.Address}`;
+        card.appendChild(address);
+
+        const website = document.createElement('p');
+        const websiteLink = document.createElement('a');
+        websiteLink.href = `http://${member.Website}`;
+        websiteLink.textContent = member.Website;
+        website.appendChild(websiteLink);
+        card.appendChild(website);
+
+        const membershipLevel = document.createElement('p');
+        membershipLevel.textContent = `Membership Level: ${member['Membership level']}`;
+        card.appendChild(membershipLevel);
+
+        spotlightContainer.appendChild(card);
+    });
+}
+
+fetchMembers();
