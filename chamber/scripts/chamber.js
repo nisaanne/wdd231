@@ -28,8 +28,8 @@ async function apiFetch() {
       const response = await fetch(myURL);
       if (response.ok) {
         const data = await response.json();
-        console.log(data); // testing only
-        displayResults(data); // uncomment when ready
+        console.log(data); 
+        displayResults(data);
       } else {
           throw Error(await response.text());
       }
@@ -50,3 +50,5 @@ function displayResults(data) {
 }
 
 apiFetch();
+
+
