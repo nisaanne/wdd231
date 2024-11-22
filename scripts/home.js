@@ -1,9 +1,9 @@
-
-    var currentYear = new Date().getFullYear();
-    document.getElementById('current-year').textContent = currentYear;
-  
-    let lastModifiedDate = document.lastModified;
-    document.getElementById("lastModified").textContent = "This document was last modified on: " + lastModifiedDate;
+document.addEventListener("DOMContentLoaded", function() {
+    const currentYear = new Date().getFullYear();
+    document.getElementById('current-year').textContent = currentYear; 
+    
+    const lastModified = document.lastModified; 
+    document.getElementById("lastModified").textContent = "This document was last modified on: "+ lastModified;
   
     const mainnav = document.querySelector("#animateme")
     const hambutton = document.querySelector("#menu");
@@ -129,7 +129,7 @@ wddBtn.addEventListener('click', () => {
 
 displayButtons(courses);
 
-
+});
 
 
 
