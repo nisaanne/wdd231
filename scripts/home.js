@@ -98,13 +98,15 @@
 
 const buttonContainer = document.getElementById('course-buttons');
 const totalCreditsElement = document.getElementById('total-credits');
+const courseDetails = document.getElementById("course-details");
 
 const displayButtons = (filteredCourses) => {
     buttonContainer.innerHTML = ''; 
     filteredCourses.forEach(course => {
         const button = document.createElement('button');
         button.innerText = course.title;
-        button.className = course.completed ? 'completed' : 'not-completed'; 
+        button.className = course.completed ? 'completed' : 'not-completed';
+        button.addEventListener('click', () => displayCourseDetails(course));
         buttonContainer.appendChild(button);
     });
     const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0); 
@@ -115,6 +117,7 @@ const displayButtons = (filteredCourses) => {
 const allBtn = document.getElementById('filter-all');
 const cseBtn = document.getElementById('filter-cse');
 const wddBtn = document.getElementById('filter-wdd');
+
 
 allBtn.addEventListener('click', () => displayButtons(courses));
 cseBtn.addEventListener('click', () => {
@@ -130,8 +133,27 @@ wddBtn.addEventListener('click', () => {
 displayButtons(courses);
 
 
+function displayCourseDetails(course) {
+  courseDetails.innerHTML = '';
+  courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+  courseDetails.showModal();
+  
+  closeModal.addEventListener("click", () => {
+    courseDetails.close();
+  });
+}
 
-
+courseDiv.addEventListener('click', () => {
+      displayCourseDetails(course);
+    });
 
 
     
