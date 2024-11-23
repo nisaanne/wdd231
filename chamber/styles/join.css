@@ -199,7 +199,10 @@ nav.show {
             width: 250px;
           }
         
-                 
+          input:required {border-left-color: #d70000;}
+          input:focus {border-left-color: black; outline:none;}
+          input:required:valid{border-left-color: green;}
+        
           input[type=submit] {
             border: none;
             text-align: center;
