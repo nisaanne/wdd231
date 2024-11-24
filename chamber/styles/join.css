@@ -135,7 +135,7 @@ nav.show {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     border-radius: 10px; 
     background-color: #F4F1DE;
-
+}
 
   form {
       margin: 1rem 2%;
@@ -199,44 +199,38 @@ nav.show {
     }  
 
 
-@media (min-width: 768px) {
-    .navigation {
-        display: flex;
-        align-items: baseline;
-    }
-
-    .navigation ul {
-        display: flex; 
-        flex-direction: row;
-    }
-
-    .navigation li {
-        display: block;
-        flex: 1 1 100%;
-    }
-
-    .navigation a {
-        text-align: center;
-        padding: 1em;
-        display: block;
-    }
-
-    nav {
-        grid-template-rows: 1fr;
-    }
-
-    #menu {
-        display: none;
-    }
-
-    html {
-        -webkit-text-size-adjust: 100%; 
-        -ms-text-size-adjust: 100%;
-      }
-      
-      h1 {
-        color: #3D405B;
-      }
-    }
+    @media (min-width: 768px) {
+        .navigation {
+            display: flex;
+            align-items: baseline;
+        }
+    
+        .navigation ul {
+            display: flex; 
+            flex-direction: row;
+        }
+    
+        .navigation li {
+            display: block;
+            flex: 1 1 100%;
+        }
+    
+        .navigation a {
+            text-align: center;
+            padding: 1em;
+            display: block;
+        }
+    
+        nav {
+            grid-template-rows: 1fr;
+        }
+    
+        #menu {
+            display: none;
+        }
+    
+        .member-grid{
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
    
 
