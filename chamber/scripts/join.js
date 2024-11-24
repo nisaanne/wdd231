@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
       subject: 'Gold Membership',
       number: '001',
       title: 'Gold Membership Benefits',
-      credits: 'N/A',
+      cost: '$1000',
       certificate: 'Yes',
       description: 'Benefits of the Gold Membership include access to exclusive events, premium resources, and personalized support.',
       benefits: ['Exclusive Events', 'Premium Resources', 'Personal Support']
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
       subject: 'Silver Membership',
       number: '002',
       title: 'Silver Membership Benefits',
-      credits: 'N/A',
+      cost: '$500',
       certificate: 'Yes',
       description: 'Benefits of the Silver Membership include access to networking events, valuable resources, and community support.',
       benefits: ['Networking', 'Valuable Resources', 'Community Support']
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
       subject: 'Bronze Membership',
       number: '003',
       title: 'Bronze Membership Benefits',
-      credits: 'N/A',
+      cost: '$250',
       certificate: 'Yes',
       description: 'Benefits of the Bronze Membership include access to basic resources and participation in community events.',
       benefits: ['Basic Resources', 'Community Events']
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
       subject: 'Non-profit Membership',
       number: '004',
       title: 'Non-profit Membership Benefits',
-      credits: 'N/A',
+      cost: 'Complimentary',
       certificate: 'Yes',
       description: 'Benefits of the Non-profit Membership include access to grants, volunteer support, and community outreach programs.',
       benefits: ['Grants', 'Volunteer Support', 'Community Outreach']
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <button id="closeModal">❌</button>
       <h2>${course.subject} ${course.number}</h2>
       <h3>${course.title}</h3>
-      <p><strong>Credits</strong>: ${course.credits}</p>
+      <p><strong>Cost</strong>: ${course.cost}</p>
       <p><strong>Certificate</strong>: ${course.certificate}</p>
       <p>${course.description}</p>
       <p><strong>Benefits</strong>: ${course.benefits.join(', ')}</p>
