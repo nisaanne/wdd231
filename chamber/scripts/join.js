@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const membershipLevels = [
     {
+      cost: '$1000',
       subject: 'Gold Membership',
       number: '001',
       title: 'Gold Membership Benefits',
@@ -23,6 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
       benefits: ['Exclusive Events', 'Premium Resources', 'Personal Support']
     },
     {
+      cost: '$500',
       subject: 'Silver Membership',
       number: '002',
       title: 'Silver Membership Benefits',
@@ -31,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
       benefits: ['Networking', 'Valuable Resources', 'Community Support']
     },
     {
+      cost: '$250',
       subject: 'Bronze Membership',
       number: '003',
       title: 'Bronze Membership Benefits',
@@ -39,6 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
       benefits: ['Basic Resources', 'Community Events']
     },
     {
+      cost: 'Complimentary',
       subject: 'Non-profit Membership',
       number: '004',
       title: 'Non-profit Membership Benefits',
@@ -61,6 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const courseDetails = document.getElementById('courseDetails');
     courseDetails.innerHTML = `
       <button id="closeModal">❌</button>
+      <p><strong>Cost</strong>: ${course.cost}</p>
       <p><strong>Certificate</strong>: ${course.certificate}</p>
       <p>${course.description}</p>
       <p><strong>Benefits</strong>: ${course.benefits.join(', ')}</p>
