@@ -231,6 +231,11 @@ input:-webkit-autofill {
     background-color: #f9f9f9;
 }
 
+.card a h3{
+    background-color: #E07A5F;
+    padding: .5em;
+    border: .1em solid black;
+}
 
 @media (max-width: 767px) {
     .content-container {
