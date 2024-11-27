@@ -9,30 +9,19 @@ document.addEventListener("DOMContentLoaded", () => {
     const hambutton = document.querySelector("#menu");
   
     hambutton.addEventListener("click", () => {
-      mainnav.classList.toggle("show");
-      hambutton.classList.toggle("show");  
+        mainnav.classList.toggle("show");
+        hambutton.classList.toggle("show");  
     });
 
-  
-document.addEventListener("DOMContentLoaded", function() {
-    
     const currentDate = new Date();
-    
-    
     const lastVisit = localStorage.getItem('lastVisit');
-    
-    
     const visitMessage = document.getElementById('visit-message');
     
     if (lastVisit) {
-        
         const lastVisitDate = new Date(lastVisit);
-        
-       
         const timeDifference = currentDate - lastVisitDate;
         const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
         
-       
         if (daysDifference < 1) {
             visitMessage.textContent = "Back so soon! Awesome!";
         } else if (daysDifference === 1) {
@@ -41,13 +30,8 @@ document.addEventListener("DOMContentLoaded", function() {
             visitMessage.textContent = `You last visited ${daysDifference} days ago.`;
         }
     } else {
-        
         visitMessage.textContent = "Welcome! Let us know if you have any questions.";
     }
     
-    
     localStorage.setItem('lastVisit', currentDate);
 });
-
-
-})
