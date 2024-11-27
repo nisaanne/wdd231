@@ -34,4 +34,25 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     
     localStorage.setItem('lastVisit', currentDate);
+
+    // Pop-up example with styled box
+    const popup = document.createElement('div');
+    popup.id = 'popup';
+    popup.classList.add('popup-box');  // Add this line to use the CSS class
+
+    const popupContent = document.createElement('div');
+    popupContent.textContent = 'Hello! Welcome to our website!';
+    popup.appendChild(popupContent);
+    
+    const closeBtn = document.createElement('button');
+    closeBtn.textContent = 'X';
+    closeBtn.classList.add('close-btn');  // Add this line to use the CSS class
+    
+    closeBtn.addEventListener('click', () => {
+        popup.style.display = 'none';
+    });
+
+    popup.appendChild(closeBtn);
+    document.body.appendChild(popup);
 });
+
