@@ -15,7 +15,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const currentDate = new Date();
     const lastVisit = localStorage.getItem('lastVisit');
-    const visitMessage = document.getElementById('visit-message');
+    
+   
+    const popup = document.createElement('div');
+    popup.id = 'popup';
+    popup.classList.add('popup-box');  
+    const popupContent = document.createElement('div');
     
     if (lastVisit) {
         const lastVisitDate = new Date(lastVisit);
@@ -23,30 +28,21 @@ document.addEventListener("DOMContentLoaded", () => {
         const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
         
         if (daysDifference < 1) {
-            visitMessage.textContent = "Back so soon! Awesome!";
+            popupContent.textContent = "Back so soon! Awesome!";
         } else if (daysDifference === 1) {
-            visitMessage.textContent = "You last visited 1 day ago.";
+            popupContent.textContent = "You last visited 1 day ago.";
         } else {
-            visitMessage.textContent = `You last visited ${daysDifference} days ago.`;
+            popupContent.textContent = `You last visited ${daysDifference} days ago.`;
         }
     } else {
-        visitMessage.textContent = "Welcome! Let us know if you have any questions.";
+        popupContent.textContent = "Welcome! Let us know if you have any questions.";
     }
     
-    localStorage.setItem('lastVisit', currentDate);
-
-    // Pop-up example with styled box
-    const popup = document.createElement('div');
-    popup.id = 'popup';
-    popup.classList.add('popup-box');  // Add this line to use the CSS class
-
-    const popupContent = document.createElement('div');
-    popupContent.textContent = 'Hello! Welcome to our website!';
     popup.appendChild(popupContent);
-    
+
     const closeBtn = document.createElement('button');
     closeBtn.textContent = 'X';
-    closeBtn.classList.add('close-btn');  // Add this line to use the CSS class
+    closeBtn.classList.add('close-btn'); 
     
     closeBtn.addEventListener('click', () => {
         popup.style.display = 'none';
@@ -54,5 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     popup.appendChild(closeBtn);
     document.body.appendChild(popup);
+    
+    localStorage.setItem('lastVisit', currentDate);
 });
 

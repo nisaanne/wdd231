@@ -326,7 +326,7 @@ input:-webkit-autofill {
 }
 
 .close-btn:hover {
-    color: red; /* Optional: Change color on hover for better UX */
+    color: red; 
 }
 
 @media (max-width: 767px) {
