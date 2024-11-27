@@ -348,6 +348,9 @@ input:-webkit-autofill {
         justify-content: space-between;
     }
 
+    .ycpics img:hover {
+        transform: scale(1.1);
+
     .form-container,
     .membership-levels {
         max-width: 45%;
