@@ -269,7 +269,34 @@ input:-webkit-autofill {
     }
   }
   
+  .ycpics img {
+    width: 400px;
+    height: 300px; 
+    object-fit: cover; 
+}
 
+
+.ycpics {
+    flex: 2; 
+}
+
+.text-content {
+    flex: 1; 
+    padding: 20px; 
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px; 
+}
+
+.text-content .box1,
+.text-content .box2,
+.text-content .box3 {
+    background-color: #F4F1DE; 
+    padding: 20px; 
+    border: 1px solid #ddd; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
 @media (max-width: 767px) {
     .content-container {
         flex-direction: column;
@@ -327,4 +354,5 @@ input:-webkit-autofill {
         display: none;
     }
 
+  
 }
