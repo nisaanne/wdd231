@@ -347,7 +347,12 @@ input:-webkit-autofill {
         flex-direction: row;
         justify-content: space-between;
     }
-
+    .ycpics img {
+        width: 30vw; /* 50% of the viewport width */
+        aspect-ratio: 16/9;
+        
+        
+    }
     .ycpics img {
         transition: transform 0.3s ease;
     }
