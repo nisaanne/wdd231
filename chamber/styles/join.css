@@ -348,7 +348,7 @@ input:-webkit-autofill {
         justify-content: space-between;
     }
     .ycpics img {
-        width: 30vw; /* 50% of the viewport width */
+        width: 30vw; 
         aspect-ratio: 16/9;
         
         
