@@ -1,0 +1,13 @@
+:root {
+    --teal: rgb #0D99FF;
+    --yellow: rgb#FFD700;
+    --pink: rgb#FF6F61;
+    --purple: rgb#E6E6FA;
+
+}
+
+
+h1{
+    color: var(--teal);
+    background-color: var(--purple);
+}
