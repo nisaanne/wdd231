@@ -2,7 +2,7 @@
     --blue: rgb(173, 216, 230); 
     --yellow: rgb(255, 255, 224); 
     --green: rgb(34, 139, 34);
-    --orange: rgb(255, 127, 80);
+    --orange: rgb(255, 127, 0);
 }
 
 
@@ -23,17 +23,19 @@ header, footer{
     display: flex;
     padding: 1em;
     background-color: var(--yellow);
-    border-bottom: 10px solid var(--green);
+    
     
 }
 
 header{
+    border-top: 50px solid var(--blue);
     justify-content: center;
 }
 
 footer{
     justify-content: center;
-    border-top: 10px solid var(--green);
+    border-bottom: 50px solid var(--green);
+    
 }
 
 header img{
