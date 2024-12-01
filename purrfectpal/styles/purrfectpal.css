@@ -19,7 +19,7 @@ h1{
 }
 
 
-header{
+header, footer{
     display: flex;
     padding: 1em;
     background-color: var(--yellow);
