@@ -1,8 +1,8 @@
 :root {
-    --teal: rgb(0, 85, 85); /* Darker teal */
-    --yellow: rgb(255, 223, 0); /* Bright yellow */
-    --pink: rgb(240, 128, 128);
-    --purple: rgb(135, 206, 235);
+    --teal: rgb(173, 216, 230); /* Darker teal */
+    --yellow: rgb(255, 255, 224); /* Bright yellow */
+    --pink: rgb(34, 139, 34);
+    --purple: rgb(255, 127, 80);
 }
 
 
@@ -10,8 +10,22 @@
 
 
 h1{
-    color: var(--teal);
+    color: var(--pink);
     background-color: var(--yellow);
     border-color: var(--pink);
     
+}
+
+
+header{
+    padding: 1em;
+    background-color: var(--yellow);
+}
+
+footer{
+    background-color: var(--yellow);
+}
+
+.first{
+    background-color: var(--teal);
 }
