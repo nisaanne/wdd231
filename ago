@@ -1,0 +1,298 @@
+[33mcommit 848d3592d69706297716538d63c26c027ad4056b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Sun Dec 1 07:43:30 2024 -0800
+
+    fix
+
+[33mcommit 00407981b171836164415fddbf89b1841b77a634[m
+Merge: 08eaeb1 e9174f3
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Sun Dec 1 07:42:12 2024 -0800
+
+    Merge branch 'main' of https://github.com/nisaanne/wdd231
+
+[33mcommit 08eaeb1027e0aec0621021972dc343c864a41a47[m
+Merge: 51113d1 a2239ac
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Sun Dec 1 07:39:07 2024 -0800
+
+    erase problem file
+
+[33mcommit e9174f3d93ac67cf0808dc0df5517eac8ab1d988[m
+Merge: 51113d1 a2239ac
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Sun Dec 1 07:39:07 2024 -0800
+
+    Merge branch 'main' of https://github.com/nisaanne/wdd231
+
+[33mcommit 51113d1bee4b4795794416758ac3596d299cdb5d[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Sun Dec 1 07:03:24 2024 -0800
+
+    add font
+
+[33mcommit a2239ac6b91993eccba5cce0c18da880f395fbab[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Sun Dec 1 07:03:24 2024 -0800
+
+    color scheme
+
+[33mcommit 47381703282952ed30b7a640e5b270d691bf0bce[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Sat Nov 30 09:49:24 2024 -0800
+
+    save color changes
+
+[33mcommit 7ada5246b53bbc2d7eff08bab584b6f955f51d2b[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Sat Nov 30 09:38:08 2024 -0800
+
+    purrfect pal website
+
+[33mcommit 3d5449f3ad1b4a8c202287426b50063312d11229[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Wed Nov 27 16:52:54 2024 -0800
+
+    fix small error
+
+[33mcommit 73e9a0adacdab0861f01a1ee9bdf13274e5b0f34[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Wed Nov 27 16:47:16 2024 -0800
+
+    fix image size
+
+[33mcommit 43c70d88f5e705f1b47b393412f8151e4c4c7c65[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Wed Nov 27 15:49:17 2024 -0800
+
+    fix images
+
+[33mcommit 2c4f423bfe382c1dbe475570c08c9c38f4cee8ef[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Wed Nov 27 15:27:33 2024 -0800
+
+    save smaller images
+
+[33mcommit 084477f7e5cf3faaf0af1def6a7db6cfd8f7e09e[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Wed Nov 27 15:25:24 2024 -0800
+
+    add image
+
+[33mcommit 25f8836aa621da65bca1e7bd2dc90e96a7d0d209[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Wed Nov 27 15:22:26 2024 -0800
+
+    change images for page load
+
+[33mcommit 240adf263b5728fe8a0d8b4bc0e3f264ccfa63a7[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Wed Nov 27 14:35:35 2024 -0800
+
+    save hover effect
+
+[33mcommit 5781623214ad069fc6b0f62be9a7b88b2be1fadc[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Wed Nov 27 14:12:09 2024 -0800
+
+    fix error
+
+[33mcommit 45ad1b8cf775b81aeb589c6c7c6c287bfc0b9f75[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Wed Nov 27 14:05:40 2024 -0800
+
+    hover effect
+
+[33mcommit 6f763a73e2dd00fbe63d57092ed73eb0cf2ea7f8[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Wed Nov 27 12:30:21 2024 -0800
+
+    fix join today
+
+[33mcommit d24785c87078992c5d7f9b66d70b749d27f121a7[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Wed Nov 27 12:20:13 2024 -0800
+
+    fix head
+
+[33mcommit fb87b74c1876fb9f36654b47f1b7666957c44452[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Wed Nov 27 12:19:03 2024 -0800
+
+    fix links
+
+[33mcommit f06f4ac13644ac9c1b06e5b132f04fb65e63dd72[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Wed Nov 27 12:14:15 2024 -0800
+
+    reorder css
+
+[33mcommit 1e079af867b78bd94f511ec81b71ff354592766f[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Wed Nov 27 12:07:49 2024 -0800
+
+    fix extra message
+
+[33mcommit 83aa516c163dde3c9cc36a69fad4dfbd10a054d9[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Wed Nov 27 11:58:44 2024 -0800
+
+    fix styling box
+
+[33mcommit e3cedcb00f7612c81a41210ec007632e331a0118[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Wed Nov 27 11:46:26 2024 -0800
+
+    correct js
+
+[33mcommit 1e93d769fd81cbaf17c489779d803ace9361e4aa[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Wed Nov 27 11:28:53 2024 -0800
+
+    changes
+
+[33mcommit 5887b557fbeb93b2e158075c0bf9379ebeda4bfd[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Wed Nov 27 10:23:42 2024 -0800
+
+    add pics
+
+[33mcommit a44083a9526dd83df0c95eda0fba0788368e7e6b[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Wed Nov 27 09:22:26 2024 -0800
+
+    fix link
+
+[33mcommit 026b0f5d040e05e11dd83d1643383df00c11f30b[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Wed Nov 27 09:20:46 2024 -0800
+
+    head info
+
+[33mcommit f89767a7df15f37dabc2235ccdb56099a659a410[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Wed Nov 27 09:19:34 2024 -0800
+
+    start discover page
+
+[33mcommit baf6d87523e88ca791156f77ba9638d8319b21d5[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Sun Nov 24 10:22:41 2024 -0800
+
+    change title
+
+[33mcommit 789a89e9cded6c738a1691008ba219225497ce9a[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Sun Nov 24 10:21:05 2024 -0800
+
+    change title
+
+[33mcommit 024bd942694cac030a49f5697e2f5cf1936d77d9[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Sun Nov 24 10:19:18 2024 -0800
+
+    add normalize
+
+[33mcommit 3c338beb61e2005c193d0c41c8f224cf37b94768[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Sun Nov 24 10:12:05 2024 -0800
+
+    rename thanks page
+
+[33mcommit 5d3d1c8c47c896cb759c5d3da786a64aea844386[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Sun Nov 24 08:42:27 2024 -0800
+
+    head
+
+[33mcommit 3490348cc866ab71bd998f1a7f0bb201bdf89cd8[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Sun Nov 24 08:29:07 2024 -0800
+
+    change head
+
+[33mcommit 61984936533164fbd0bc14a2fea156c1eab48108[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Sun Nov 24 08:16:44 2024 -0800
+
+    change colors
+
+[33mcommit 3ee2f9e7e5b47c5d8794efe6b851eacac29993c3[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Sun Nov 24 07:20:13 2024 -0800
+
+    duplicate title
+
+[33mcommit 356b667d04245832a0e4d383c2f2498eade9e0af[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Sun Nov 24 07:01:51 2024 -0800
+
+    fix autocomplete
+
+[33mcommit 53f8053aa9aa77f3498bd8a13a852b013f2cd2a6[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Sat Nov 23 19:49:25 2024 -0800
+
+    fix cost
+
+[33mcommit 827b21daa252f5d84fda0ca39d74db1832aba733[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Sat Nov 23 19:33:48 2024 -0800
+
+    fixed timestamp
+
+[33mcommit f9b97fa94a00ea298e851039c705f581d0a9bbe6[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Sat Nov 23 19:25:57 2024 -0800
+
+    fixed thanksjs
+
+[33mcommit f389af309bd0259b785abd5c74544b066b4f9591[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Sat Nov 23 19:07:39 2024 -0800
+
+    adjust color
+
+[33mcommit 1bdfe8958807cfb90d44bb776a20dda9a362ceab[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Sat Nov 23 18:57:05 2024 -0800
+
+    add animation
+
+[33mcommit 0a6e3055094796002c335ab0cb022f0e02e602c4[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Sat Nov 23 18:44:36 2024 -0800
+
+    add cost to modal
+
+[33mcommit 326b331493cc73a8f49d064befd2b2620427d7e7[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Sat Nov 23 18:38:21 2024 -0800
+
+    fixed modal
+
+[33mcommit eef349840669f3a04ea4588b851f4f121dda46e7[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Sat Nov 23 18:34:16 2024 -0800
+
+    add modal
+
+[33mcommit 2be089c135c02b7a7d1e0a3b634c93d7235f0fad[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Sat Nov 23 18:04:02 2024 -0800
+
+    links
+
+[33mcommit 3163552121e2de95daafdf3489c690fbdb46aaca[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Sat Nov 23 17:57:03 2024 -0800
+
+    save changes
+
+[33mcommit 6c2d12d7b7fc7b81dc104ddc130e26a6812ed233[m
+Author: nisaanne <youremail@nisaanne@byui.edu>
+Date:   Sat Nov 23 17:10:24 2024 -0800
+
+    fixed container
+
+[
