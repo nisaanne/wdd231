@@ -11,10 +11,13 @@
     box-sizing: border-box; 
 }
 
+
+
 header, footer {
     display: flex;
     padding: 1em;
     background-color: var(--yellow);
+    
 }
 
 main {
@@ -126,6 +129,7 @@ nav.show {
     margin-left: auto;
 }
 
+
 /* Default styles for all screen sizes */
 .image-container {
     display: flex;
@@ -142,27 +146,28 @@ nav.show {
 }
 
 .catimage {
-    width: 400px;
+    width: 400px; 
     height: 400px;
-    border-radius: 50%;
+    border-radius: 50%; 
     object-fit: cover;
-    aspect-ratio: 1 / 1; /* Maintain circular aspect ratio */
 }
 
 .cat1, .cat2 {
-    width: 300px;
-    padding: 10px;
-    text-align: center;
-    word-wrap: break-word;
-    white-space: normal;
-    box-sizing: border-box;
-    color: black;
+    width: 300px; 
+    padding: 10px; 
+    text-align: center; 
+    word-wrap: break-word; 
+    white-space: normal; 
+    box-sizing: border-box; 
+    color: black; 
 }
 
 .cat1 p, .cat2 p {
-    margin: 0;
-    display: inline-block;
+    margin: 0; 
+    display: inline-block; 
 }
+
+
 
 footer {
     background-color: var(--yellow);
@@ -175,7 +180,7 @@ footer {
     }
 
     .navigation ul {
-        display: flex;
+        display: flex; 
         flex-direction: row;
     }
 
@@ -198,21 +203,56 @@ footer {
         display: none;
     }
 
-    .member-grid {
+    .member-grid{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
-    .stats {
-        grid-template-columns: 2fr 1fr 1fr;
+    .stats{
+        grid-template-columns: 2fr 1fr 1fr; 
     }
-
-    /* Styles for larger screens */
     .image-container {
-        flex-direction: row; /* Align images and text horizontally for larger screens */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 20px; 
     }
-
+    
+    .image-container.first {
+        flex-direction: row-reverse; 
+    }
+    
+    .image-container.second {
+        flex-direction: row-reverse; 
+        padding-bottom: 70px;
+    }
+    
+    .catimage-container {
+        display: flex;
+        justify-content: center;
+    }
+    
     .catimage {
-        width: 300px;
-        height: 300px;
+        width: 400px; 
+        height: 400px;
+        border-radius: 50%; 
+        object-fit: cover;
     }
-}
+    
+    .cat1, .cat2 {
+        width: 300px; 
+        padding: 10px; 
+        text-align: center; 
+        word-wrap: break-word; 
+        white-space: normal; 
+        box-sizing: border-box; 
+        color: black; 
+    }
+    
+    .cat1 p, .cat2 p {
+        margin: 0; 
+        display: inline-block; 
+    }
+    
+    
+}        
