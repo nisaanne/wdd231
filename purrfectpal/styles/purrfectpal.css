@@ -52,7 +52,7 @@ h1 {
     background-color: var(--yellow);
     border-color: var(--pink);
     font-family: "Sofadi One";
-    font-size: 8vw; 
+    font-size: 6vw; 
     padding: 10px;
     margin: 10px;
     word-break: break-word; 
@@ -281,3 +281,4 @@ nav.show {
     }
 }
 
+}
