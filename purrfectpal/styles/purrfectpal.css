@@ -3,7 +3,7 @@
     --yellow: rgb(255, 255, 224); 
     --green: rgb(34, 139, 34);
     --orange: rgb(255, 127, 0);
-    --pink: rgb(255, 182, 193); /* Defined missing pink */
+    
 }
 
 * {
@@ -16,7 +16,7 @@ html, body {
     height: 100%;
     width: 100%;
     margin: 0;
-    overflow-x: hidden; /* Prevent horizontal overflow */
+    overflow-x: hidden; 
 }
 
 body {
@@ -48,14 +48,14 @@ main {
 }
 
 h1 {
-    color: var(black); /* Ensure h1 color is correctly set */
+    color: var(black); 
     background-color: var(--yellow);
     border-color: var(--pink);
     font-family: "Sofadi One";
-    font-size: 8vw; /* Responsive font size */
+    font-size: 8vw; 
     padding: 10px;
     margin: 10px;
-    word-break: break-word; /* Prevents long words from causing overflow */
+    word-break: break-word; 
 }
 
 header img {
@@ -78,16 +78,16 @@ header img {
 
 .catimage {
     width: 100%;
-    max-width: 400px; /* Limit maximum width */
-    height: auto; /* Adjust height automatically */
+    max-width: 400px; 
+    height: auto;
     border-radius: 50%;
-    aspect-ratio: 1/1; /* Maintain aspect ratio */
+    aspect-ratio: 1/1; 
     object-fit: cover;
 }
 
 .cat1, .cat2 {
     width: 100%;
-    max-width: 300px; /* Limit maximum width */
+    max-width: 300px; 
     padding: 10px;
     text-align: center;
     word-wrap: break-word;
@@ -103,7 +103,7 @@ header img {
 
 @media (min-width: 768px) {
     h1 {
-        font-size: 6vw; /* Adjust font size for medium screens */
+        font-size: 6vw;
     }
 
     .image-container {
@@ -130,16 +130,16 @@ header img {
 
     .catimage {
         width: 100%;
-        max-width: 400px; /* Limit maximum width */
-        height: auto; /* Adjust height automatically */
+        max-width: 400px; 
+        height: auto;
         border-radius: 50%;
-        aspect-ratio: 1/1; /* Maintain aspect ratio */
+        aspect-ratio: 1/1; 
         object-fit: cover;
     }
 
     .cat1, .cat2 {
         width: 100%;
-        max-width: 300px; /* Limit maximum width */
+        max-width: 300px;
         padding: 10px;
         text-align: center;
         word-wrap: break-word;
@@ -156,7 +156,7 @@ header img {
 
 @media (min-width: 1024px) {
     h1 {
-        font-size: 4vw; /* Adjust font size for larger screens */
+        font-size: 4vw; 
     }
 }
 
