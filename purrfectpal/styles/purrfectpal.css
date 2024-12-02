@@ -59,7 +59,7 @@ h1 {
 }
 
 header img {
-    height: 10em;
+    height: 5em;
 }
 
 .image-container {
@@ -275,9 +275,15 @@ nav.show {
         display: none;
     }
 
+    header img{
+        height: 8em;
+    }
 @media (min-width: 1024px) {
     h1 {
         font-size: 4vw; 
+    }
+    header img{
+        height: 10em;
     }
 }
 
