@@ -58,6 +58,10 @@ h1 {
     word-break: break-word; 
 }
 
+h2{
+    font-family: "Sofadi One";  
+}
+
 header img {
     height: 5em;
 }
