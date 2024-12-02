@@ -49,7 +49,6 @@ header img {
 .navigation {
     list-style: none;
     margin: 0 auto;
-    max-width: 760px;
     color: black;
 }
 
@@ -112,6 +111,7 @@ nav {
     display: grid;
     grid-template-rows: 0fr;
     transition: grid-template-rows 0.5s ease-out;
+    background-color: var(--yellow);
 }
 
 nav ul {
@@ -127,6 +127,7 @@ nav.show {
     flex-direction: column;
     cursor: pointer;
     margin-left: auto;
+    
 }
 
 
@@ -203,13 +204,6 @@ footer {
         display: none;
     }
 
-    .member-grid{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
-    .stats{
-        grid-template-columns: 2fr 1fr 1fr; 
-    }
     .image-container {
         display: flex;
         align-items: center;
