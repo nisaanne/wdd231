@@ -3,6 +3,7 @@
     --yellow: rgb(255, 255, 224); 
     --green: rgb(34, 139, 34);
     --orange: rgb(255, 127, 0);
+    --pink: rgb(255, 182, 193); /* Defined missing pink */
 }
 
 * {
@@ -11,25 +12,25 @@
     box-sizing: border-box; 
 }
 
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
 
+body {
+    background-color: var(--yellow);
+}
+
+header, footer, main {
+    width: 100%;
+    background-color: var(--yellow);
+}
 
 header, footer {
     display: flex;
     padding: 1em;
-    background-color: var(--yellow);
-    
-}
-
-main {
-    background-color: var(--yellow);
-}
-
-h1 {
-    color: var(--pink);
-    background-color: var(--yellow);
-    border-color: var(--pink);
-    font-family: "Sofadi One";
-    font-size: 80px;
 }
 
 header {
@@ -40,17 +41,30 @@ header {
 footer {
     justify-content: center;
     border-bottom: 50px solid var(--green);
-    
+}
+
+main {
+    padding: 1em;
+}
+
+h1 {
+    color: var(black); /* Ensure h1 color is correctly set */
+    background-color: var(--yellow);
+    border-color: var(--pink);
+    font-family: "Sofadi One";
+    font-size: 8vw; /* Responsive font size */
+    padding: 10px;
+    margin: 10px;
+    word-break: break-word; /* Prevents long words from causing overflow */
 }
 
 header img {
     height: 10em;
 }
 
-
 .image-container {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -63,77 +77,86 @@ header img {
 }
 
 .catimage {
-    width: 400px; 
-    height: 400px;
-    border-radius: 50%; 
+    width: 100%;
+    max-width: 400px; /* Limit maximum width */
+    height: auto; /* Adjust height automatically */
+    border-radius: 50%;
+    aspect-ratio: 1/1; /* Maintain aspect ratio */
     object-fit: cover;
 }
 
 .cat1, .cat2 {
-    width: 300px; 
-    padding: 10px; 
-    text-align: center; 
-    word-wrap: break-word; 
-    white-space: normal; 
-    box-sizing: border-box; 
-    color: black; 
+    width: 100%;
+    max-width: 300px; /* Limit maximum width */
+    padding: 10px;
+    text-align: center;
+    word-wrap: break-word;
+    white-space: normal;
+    box-sizing: border-box;
+    color: black;
 }
 
 .cat1 p, .cat2 p {
-    margin: 0; 
-    display: inline-block; 
-}
-
-
-footer {
-    background-color: var(--yellow);
+    margin: 0;
+    display: inline-block;
 }
 
 @media (min-width: 768px) {
-    
+    h1 {
+        font-size: 6vw; /* Adjust font size for medium screens */
+    }
+
     .image-container {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
-        gap: 20px; 
+        gap: 20px;
     }
-    
+
     .image-container.first {
-        flex-direction: row-reverse; 
+        flex-direction: row-reverse;
     }
-    
+
     .image-container.second {
-        flex-direction: row-reverse; 
+        flex-direction: row-reverse;
         padding-bottom: 70px;
     }
-    
+
     .catimage-container {
         display: flex;
         justify-content: center;
     }
-    
+
     .catimage {
-        width: 400px; 
-        height: 400px;
-        border-radius: 50%; 
+        width: 100%;
+        max-width: 400px; /* Limit maximum width */
+        height: auto; /* Adjust height automatically */
+        border-radius: 50%;
+        aspect-ratio: 1/1; /* Maintain aspect ratio */
         object-fit: cover;
     }
-    
+
     .cat1, .cat2 {
-        width: 300px; 
-        padding: 10px; 
-        text-align: center; 
-        word-wrap: break-word; 
-        white-space: normal; 
-        box-sizing: border-box; 
-        color: black; 
+        width: 100%;
+        max-width: 300px; /* Limit maximum width */
+        padding: 10px;
+        text-align: center;
+        word-wrap: break-word;
+        white-space: normal;
+        box-sizing: border-box;
+        color: black;
     }
-    
+
     .cat1 p, .cat2 p {
-        margin: 0; 
-        display: inline-block; 
+        margin: 0;
+        display: inline-block;
     }
-    
-    
-}        
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 4vw; /* Adjust font size for larger screens */
+    }
+}
+
