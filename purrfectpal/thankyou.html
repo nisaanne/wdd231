@@ -17,22 +17,19 @@
     <link href="styles/join.css" rel="stylesheet">
     <script src="scripts/thanks.js" defer></script>
     <link rel="icon" href="images/favicon.ico">
-
-  
 </head>
-
 <body>
-
   <main>
-    <h1>You are subscribed to our newsletter!</h1>
+    <h1>You are now subscribed to our newsletter!</h1>
     
-
     <div id="results"></div>
-
+    <button onclick="goBack()">Go Back</button> <!-- Back button -->
   </main>
-
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
   <script src="scripts/thanks.js"></script>
-
-  
 </body>
 </html>
