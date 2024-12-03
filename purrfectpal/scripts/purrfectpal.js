@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const breedDiv = document.createElement('div');
             breedDiv.className = 'breed';
             breedDiv.innerHTML = `
+                <img src="${breed.image}" alt="${breed.breed}" class="breed-image">
                 <h3>${breed.breed}</h3>
                 <p>Origin: ${breed.origin}</p>
                 <p>Description: ${breed.description}</p>
