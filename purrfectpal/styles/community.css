@@ -141,6 +141,31 @@ nav.show {
     background-color: #fff;
 }
 
+.image-container {
+    display: flex;
+    flex-direction: row;
+    align-items: space-around;
+    justify-content: center;
+    width: 100%;
+    gap: 20px; 
+}
+
+
+.catimage-container {
+    display: flex;
+    justify-content: center;
+}
+
+.catimage {
+    width: 100%;
+    max-width: 400px; 
+    height: auto;
+    border-radius: 50%;
+    aspect-ratio: 1/1; 
+    object-fit: cover;
+}
+
+
 @media (min-width: 768px) {
 h1 {
     font-size: 6vw;
