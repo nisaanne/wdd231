@@ -1,54 +1,51 @@
+const currentYear = new Date().getFullYear();
+document.getElementById('current-year').textContent = currentYear;
 
-var currentYear = new Date().getFullYear();
-    document.getElementById('current-year').textContent = currentYear;
-  
 let lastModifiedDate = document.lastModified;
 document.getElementById("lastModified").textContent = "This document was last modified on: " + lastModifiedDate;
 
 document.addEventListener("DOMContentLoaded", () => {
-    const membersContainer = document.getElementById("members-container");
+    const breedsContainer = document.getElementById("breeds-container");
     const toggleButton = document.getElementById("toggle-view");
     const gridIcon = document.getElementById("grid-icon");
     const listIcon = document.getElementById("list-icon");
     let isGridView = false;
 
-    async function fetchMembers() {
+    async function fetchBreeds() {
         try {
-            const response = await fetch('data/members.json');
+            const response = await fetch('data/catbreeds.json');
             const data = await response.json();
-            displayMembers(data);
+            displayBreeds(data);
         } catch (error) {
-            console.error("Error fetching members:", error);
+            console.error("Error fetching breeds:", error);
         }
     }
 
-    function displayMembers(members) {
-        membersContainer.innerHTML = '';
-        members.forEach(member => {
-            const memberDiv = document.createElement('div');
-            memberDiv.className = 'member';
-            memberDiv.innerHTML = `
-                <h3>${member['Company name']}</h3>
-                <p>Address: ${member['Address']}</p>
-                <p>Phone: ${member['Phone number']}</p>
-                <p>Website: <a href="http://${member['Website']}">${member['Website']}</a></p>
-                <img src="${member['Image']}" alt="${member['Company name']}" height="100">
-                <p>Membership Level: ${member['Membership level']}</p>
+    function displayBreeds(breeds) {
+        breedsContainer.innerHTML = '';
+        breeds.forEach(breed => {
+            const breedDiv = document.createElement('div');
+            breedDiv.className = 'breed';
+            breedDiv.innerHTML = `
+                <h3>${breed.breed}</h3>
+                <p>Origin: ${breed.origin}</p>
+                <p>Description: ${breed.description}</p>
+                <p>Temperament: ${breed.temperament}</p>
             `;
-            membersContainer.appendChild(memberDiv);
+            breedsContainer.appendChild(breedDiv);
         });
         updateView();
     }
 
     function updateView() {
         if (isGridView) {
-            membersContainer.classList.add('member-grid');
-            membersContainer.classList.remove('member-list');
+            breedsContainer.classList.add('breed-grid');
+            breedsContainer.classList.remove('breed-list');
             gridIcon.style.display = 'inline';
             listIcon.style.display = 'none';
         } else {
-            membersContainer.classList.add('member-list');
-            membersContainer.classList.remove('member-grid');
+            breedsContainer.classList.add('breed-list');
+            breedsContainer.classList.remove('breed-grid');
             gridIcon.style.display = 'none';
             listIcon.style.display = 'inline';
         }
@@ -59,14 +56,15 @@ document.addEventListener("DOMContentLoaded", () => {
         updateView();
     });
 
-    fetchMembers();
+    fetchBreeds();
 });
 
-const mainnav = document.querySelector("#animateme")
+const mainnav = document.querySelector("#animateme");
 const hambutton = document.querySelector("#menu");
 
-hambutton.addEventListener("click", () =>{
+hambutton.addEventListener("click", () => {
   mainnav.classList.toggle("show");
   hambutton.classList.toggle("show");  
 });
+
 

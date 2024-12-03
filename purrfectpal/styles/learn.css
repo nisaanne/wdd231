@@ -141,6 +141,47 @@ nav.show {
     background-color: #fff;
 }
 
+.breed {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+}
+
+.breed-list {
+    display: block;
+}
+
+.breed-list .breed {
+    border: none;
+    padding: 10px 0;
+    background-color: transparent;
+}
+
+.breed-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.breed-grid .breed {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+#toggle-view {
+    margin: 1em;
+}
+
+@media (min-width: 768px) {
+  .breed-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+
 @media (min-width: 768px) {
 h1 {
     font-size: 6vw;
