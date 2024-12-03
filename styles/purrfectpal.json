@@ -1,0 +1,75 @@
+[
+    { "breed": "Siamese", 
+      "origin": "Thailand",
+      "description": "Siamese cats are known for their striking blue eyes and sleek, short coat. They are very vocal and affectionate.", "temperament": "Friendly, Social" },
+    
+    { "breed": "Maine Coon",
+      "origin": "United States", 
+      "description": "Maine Coons are one of the largest domesticated cat breeds. They have a distinctive long, bushy tail and tufted ears.", "temperament": "Gentle, Playful" },
+   
+    { "breed": "Breed 15", 
+      "origin": "Origin 15", 
+      "description": "Description 15", 
+      "temperament": "Temperament 15" },
+
+      { "breed": "Breed 15", 
+      "origin": "Origin 15", 
+      "description": "Description 15", 
+      "temperament": "Temperament 15" },
+
+      { "breed": "Breed 15", 
+      "origin": "Origin 15", 
+      "description": "Description 15", 
+      "temperament": "Temperament 15" },
+
+      { "breed": "Breed 15", 
+      "origin": "Origin 15", 
+      "description": "Description 15", 
+      "temperament": "Temperament 15" },
+
+      { "breed": "Breed 15", 
+      "origin": "Origin 15", 
+      "description": "Description 15", 
+      "temperament": "Temperament 15" },
+
+      { "breed": "Breed 15", 
+      "origin": "Origin 15", 
+      "description": "Description 15", 
+      "temperament": "Temperament 15" },
+
+      { "breed": "Breed 15", 
+      "origin": "Origin 15", 
+      "description": "Description 15", 
+      "temperament": "Temperament 15" },
+
+      { "breed": "Breed 15", 
+      "origin": "Origin 15", 
+      "description": "Description 15", 
+      "temperament": "Temperament 15" },
+
+      { "breed": "Breed 15", 
+      "origin": "Origin 15", 
+      "description": "Description 15", 
+      "temperament": "Temperament 15" },
+
+      { "breed": "Breed 15", 
+      "origin": "Origin 15", 
+      "description": "Description 15", 
+      "temperament": "Temperament 15" },
+
+      { "breed": "Breed 15", 
+      "origin": "Origin 15", 
+      "description": "Description 15", 
+      "temperament": "Temperament 15" },
+
+      { "breed": "Breed 15", 
+      "origin": "Origin 15", 
+      "description": "Description 15", 
+      "temperament": "Temperament 15" },
+
+      { "breed": "Breed 15", 
+      "origin": "Origin 15", 
+      "description": "Description 15", 
+      "temperament": "Temperament 15" }
+  ]
+  
