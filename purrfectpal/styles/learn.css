@@ -172,11 +172,13 @@ nav.show {
 
 #toggle-view {
     margin: 1em;
+    background-color: var(--green);
+    padding: 1em;
 }
 
 
 .breed-image {
-    width: 20vw; /* Adjust the size as needed */
+    width: 20vw; 
     height: auto;
     display: block;
     margin-bottom: 1rem;
