@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("Timestamp set to PST:", timestampInput.value);
   });
 
-  // Membership levels and modal logic
+  
   const membershipLevels = [
     {
       subject: 'Gold Membership',
