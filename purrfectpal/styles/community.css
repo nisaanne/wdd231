@@ -161,7 +161,81 @@ nav.show {
     object-fit: cover;
 }
 
+/* Ensure form container styling for small screens */
+.form-container { 
+    max-width: 100%; 
+    margin: 1em auto; 
+    padding: 20px; 
+    border: 2px solid #000; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+    background-color: #F4F1DE;
+}
 
+/* Form styles */
+form {
+    width: 100%; 
+    margin: 1rem 0;
+}
+
+form label {
+    display: block;
+    font-size: .8rem;
+    color: black;
+    padding-top: .2rem;
+    margin-bottom: .5rem; /* Add margin for better spacing */
+}
+
+form h3 {
+    font-size: .9rem;
+    color: black;
+    margin: 1.5rem 0 .2rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+form input[type="text"],
+form input[type="tel"],
+form input[type="date"],
+form input[type="email"],
+form select {
+    display: block;
+    margin: .5rem 0 1rem 0;
+    padding: .5rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    border-left-width: 5px;
+    border-left-color: var(--blue);
+    font-size: 1rem;
+    color: #3D405B;
+    width: 100%; 
+}
+
+form input[type=submit] {
+    border: none;
+    text-align: center;
+    background-color: var(--blue);
+    color: black;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: #3D405B;
+}
+
+#results {
+    background-color: #F4F1DE;
+    padding: 0 1rem;
+    border: .25em solid var(--blue);
+    border-radius: 6px;
+}
+
+<<<<<<< HEAD
 .form-container { 
     max-width: 100%; 
     margin: 1em auto; 
@@ -277,6 +351,47 @@ input:-webkit-autofill {
         display: none;
     }
 
+=======
+@media (min-width: 768px) {
+    h1 {
+        font-size: 6vw;
+    }
+
+    .navigation {
+        display: flex;
+        align-items: baseline;
+        list-style: none;
+        margin: 0 auto;
+        max-width: 760px;
+        color: black;
+    }
+
+    .navigation ul {
+        display: flex; 
+        flex-direction: row;
+        flex-direction: column; 
+        align-items: flex-end;
+        gap: 20px;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navigation a {
+        text-align: center;
+        padding: 1em;
+        display: block;
+    }
+
+    nav {
+        grid-template-rows: 1fr;
+    }
+
+    #menu {
+        display: none;
+    }
+
+>>>>>>> 06a683a560d0bbf38187317aec19efcb15d4e9b8
     header img{
         height: 8em;
     }
