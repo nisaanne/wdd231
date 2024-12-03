@@ -180,7 +180,7 @@ nav.show {
 }
 
 .first{
-    background-color: var(--blue)
+    background-color: var(--yellow)
 }
 @media (min-width: 768px) {
     h1 {
