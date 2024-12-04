@@ -52,7 +52,7 @@ h1 {
     background-color: var(--yellow);
     border-color: var(--pink);
     font-family: "Sofadi One";
-    font-size: 4vw; 
+    font-size: 5vw; 
     padding: 5px;
     margin: 5px;
     
@@ -60,6 +60,7 @@ h1 {
 
 h2{
     font-family: "Sofadi One";  
+    font-size: 4vw;
 }
 
 header img {
