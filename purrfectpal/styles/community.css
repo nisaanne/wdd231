@@ -313,51 +313,55 @@ input:-webkit-autofill {
     background-color: var(--blue);
 }
 
+/* Modal styles */
 .modal {
     display: none; 
-    position:fixed;
+    position: fixed;
     z-index: 1; 
-    left: 50%; 
-    transform: translateX(-50%); 
-    top: 20%; 
-    width: auto; 
-    height: auto; 
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.4); 
-    box-shadow: none;
+    right: 0; /* Position all the way to the right */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    width: 90%; /* Width reduced for smaller screens */
+    max-width: 400px; /* Ensure it doesn't exceed a reasonable width */
+    height: auto; /* Adjust height */
+    padding: 20px; /* Add padding */
+    background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+    box-shadow: none; /* Ensure no shadow */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+    overflow: auto; /* Enable scrolling if content overflows */
 }
-
-
 
 .modal-content {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
-    width: 90%; 
-    max-width: 400px; 
+    width: 90%; /* Full width of the modal */
+    max-width: 400px; /* Restrict max width */
     border-radius: 10px;
-    text-align: center; 
-    position: relative;
-   
+    text-align: center; /* Center the paragraph content */
+    position: relative; /* Ensure the content is the reference point for the close button */
+    box-shadow: none; /* Ensure no shadow */
+    overflow: hidden; /* Hide overflow */
 }
 
-
+/* Close button */
 .close {
     position: absolute;
-    top: 10px; 
-    right: 10px; 
-   
-    font-size: 24px; 
+    top: 10px; /* Adjust the vertical position */
+    right: 10px; /* Adjust the horizontal position */
+    color: #000; /* Change color to black for visibility on white */
+    font-size: 24px; /* Adjust the size */
     font-weight: bold;
     transition: 0.3s;
 }
 
 .close:hover,
 .close:focus {
-    color:var(--orange) ;
+    color: var(--orange);
     text-decoration: none;
     cursor: pointer;
 }
+
 @media (min-width: 768px) {
     h1 {
         font-size: 6vw;
@@ -453,3 +457,6 @@ input:-webkit-autofill {
     }
   
 }
+
+
+
