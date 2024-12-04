@@ -1,7 +1,4 @@
-
-
 document.addEventListener("DOMContentLoaded", () => {
-    
     const currentYear = new Date().getFullYear();
     document.getElementById('current-year').textContent = currentYear;
 
@@ -20,18 +17,17 @@ document.addEventListener("DOMContentLoaded", () => {
         console.error("Navigation elements are missing in the DOM.");
     }
 
-   
     const imgButtons = document.querySelectorAll('.img-btn');
     const modal = document.getElementById('myModal');
-    const modalImg = document.getElementById('modal-img');
+    const modalParagraph = document.getElementById('modal-paragraph');
     const closeButton = document.querySelector('.close');
     const form = document.querySelector("form");
 
-    if (imgButtons && modal && modalImg && closeButton) {
+    if (imgButtons && modal && modalParagraph && closeButton) {
         imgButtons.forEach(button => {
             button.addEventListener('click', event => {
                 modal.style.display = 'block';
-                modalImg.src = event.currentTarget.dataset.imgSrc;
+                modalParagraph.textContent = event.currentTarget.dataset.info; // Set the paragraph content
             });
         });
 
