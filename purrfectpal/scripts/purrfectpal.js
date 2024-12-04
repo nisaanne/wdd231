@@ -69,3 +69,28 @@ hambutton.addEventListener("click", () => {
 });
 
 
+document.getElementById('fetch-cat').addEventListener('click', fetchCatImage);
+
+function fetchCatImage() {
+    const url = 'https://api.thecatapi.com/v1/images/search';
+    const apiKey = 'live_PeGZ35LGkDQCAWWQnvMNRDn7d65lDtdVx3XWtKfqJ6pYKg6OR9q705Jeilh3eDmK';
+
+    fetch(url, {
+        headers: {
+            'x-api-key': apiKey
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        const catContainer = document.getElementById('cat-container');
+        catContainer.innerHTML = ''; // Clear previous image
+        const img = document.createElement('img');
+        img.src = data[0].url;
+        img.alt = 'Random Cat';
+        catContainer.appendChild(img);
+    })
+    .catch(error => console.error('Error fetching cat image:', error));
+}
+
+
+
