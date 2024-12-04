@@ -61,6 +61,7 @@ h2 {
     font-family: "Sofadi One";  
 }
 
+
 header img {
     height: 5em;
 }
@@ -161,7 +162,7 @@ nav.show {
     object-fit: cover;
 }
 
-/* Ensure form container styling for small screens */
+
 .form-container { 
     max-width: 100%; 
     margin: 1em auto; 
@@ -172,7 +173,7 @@ nav.show {
     background-color: #F4F1DE;
 }
 
-/* Form styles */
+
 form {
     width: 100%; 
     margin: 1rem 0;
