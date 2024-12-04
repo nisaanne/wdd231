@@ -1,96 +1,54 @@
-const currentYear = new Date().getFullYear();
-document.getElementById('current-year').textContent = currentYear;
-
-let lastModifiedDate = document.lastModified;
-document.getElementById("lastModified").textContent = "This document was last modified on: " + lastModifiedDate;
+// home.js
 
 document.addEventListener("DOMContentLoaded", () => {
-    const breedsContainer = document.getElementById("breeds-container");
-    const toggleButton = document.getElementById("toggle-view");
-    const gridIcon = document.getElementById("grid-icon");
-    const listIcon = document.getElementById("list-icon");
-    let isGridView = false;
+    // Common functionality
+    const currentYear = new Date().getFullYear();
+    document.getElementById('current-year').textContent = currentYear;
 
-    async function fetchBreeds() {
-        try {
-            const response = await fetch('data/catbreeds.json');
-            const data = await response.json();
-            displayBreeds(data);
-        } catch (error) {
-            console.error("Error fetching breeds:", error);
-        }
-    }
+    const lastModifiedDate = document.lastModified;
+    document.getElementById("lastModified").textContent = "This document was last modified on: " + lastModifiedDate;
 
-    function displayBreeds(breeds) {
-        breedsContainer.innerHTML = '';
-        breeds.forEach(breed => {
-            const breedDiv = document.createElement('div');
-            breedDiv.className = 'breed';
-            breedDiv.innerHTML = `
-                <img src="${breed.image}" alt="${breed.breed}" class="breed-image">
-                <h3>${breed.breed}</h3>
-                <p>Origin: ${breed.origin}</p>
-                <p>Description: ${breed.description}</p>
-                <p>Temperament: ${breed.temperament}</p>
-            `;
-            breedsContainer.appendChild(breedDiv);
+    const mainnav = document.querySelector("#animateme");
+    const hambutton = document.querySelector("#menu");
+
+    if (mainnav && hambutton) {
+        hambutton.addEventListener("click", () => {
+            mainnav.classList.toggle("show");
+            hambutton.classList.toggle("show");
         });
-        updateView();
+    } else {
+        console.error("Navigation elements are missing in the DOM.");
     }
 
-    function updateView() {
-        if (isGridView) {
-            breedsContainer.classList.add('breed-grid');
-            breedsContainer.classList.remove('breed-list');
-            gridIcon.style.display = 'inline';
-            listIcon.style.display = 'none';
-        } else {
-            breedsContainer.classList.add('breed-list');
-            breedsContainer.classList.remove('breed-grid');
-            gridIcon.style.display = 'none';
-            listIcon.style.display = 'inline';
-        }
+    // Home page-specific functionality
+    const fetchCatButton = document.getElementById('fetch-cat');
+
+    if (fetchCatButton) {
+        fetchCatButton.addEventListener('click', fetchCatImage);
     }
 
-    toggleButton.addEventListener('click', () => {
-        isGridView = !isGridView;
-        updateView();
-    });
+    function fetchCatImage() {
+        const url = 'https://api.thecatapi.com/v1/images/search';
+        const apiKey = 'live_PeGZ35LGkDQCAWWQnvMNRDn7d65lDtdVx3XWtKfqJ6pYKg6OR9q705Jeilh3eDmK';
 
-    fetchBreeds();
+        fetch(url, {
+            headers: {
+                'x-api-key': apiKey
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            const catContainer = document.getElementById('cat-container');
+            if (catContainer) {
+                catContainer.innerHTML = ''; // Clear previous image
+                const img = document.createElement('img');
+                img.src = data[0].url;
+                img.alt = 'Random Cat';
+                catContainer.appendChild(img);
+            } else {
+                console.error('Element with ID "cat-container" not found.');
+            }
+        })
+        .catch(error => console.error('Error fetching cat image:', error));
+    }
 });
-
-const mainnav = document.querySelector("#animateme");
-const hambutton = document.querySelector("#menu");
-
-hambutton.addEventListener("click", () => {
-  mainnav.classList.toggle("show");
-  hambutton.classList.toggle("show");  
-});
-
-
-document.getElementById('fetch-cat').addEventListener('click', fetchCatImage);
-
-function fetchCatImage() {
-    const url = 'https://api.thecatapi.com/v1/images/search';
-    const apiKey = 'live_PeGZ35LGkDQCAWWQnvMNRDn7d65lDtdVx3XWtKfqJ6pYKg6OR9q705Jeilh3eDmK';
-
-    fetch(url, {
-        headers: {
-            'x-api-key': apiKey
-        }
-    })
-    .then(response => response.json())
-    .then(data => {
-        const catContainer = document.getElementById('cat-container');
-        catContainer.innerHTML = ''; // Clear previous image
-        const img = document.createElement('img');
-        img.src = data[0].url;
-        img.alt = 'Random Cat';
-        catContainer.appendChild(img);
-    })
-    .catch(error => console.error('Error fetching cat image:', error));
-}
-
-
-
