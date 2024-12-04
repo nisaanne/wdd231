@@ -313,44 +313,44 @@ input:-webkit-autofill {
     background-color: var(--blue);
 }
 
-/* Modal styles */
+
 .modal {
     display: none; 
     position: fixed;
     z-index: 1; 
-    right: 0; /* Position all the way to the right */
-    top: 50%; /* Center vertically */
-    transform: translateY(-50%); /* Adjust for vertical centering */
-    width: 90%; /* Width reduced for smaller screens */
-    max-width: 400px; /* Ensure it doesn't exceed a reasonable width */
-    height: auto; /* Adjust height */
-    padding: 20px; /* Add padding */
-    background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
-    box-shadow: none; /* Ensure no shadow */
-    box-sizing: border-box; /* Include padding in the element's total width and height */
-    overflow: auto; /* Enable scrolling if content overflows */
+    right: 0; 
+    top: 50%; 
+    transform: translateY(-50%);
+    width: 90%;
+    max-width: 400px; 
+    height: auto; 
+    padding: 20px; 
+    background-color: rgba(0, 0, 0, 0.4); 
+    box-shadow: none; 
+    box-sizing: border-box;
+    overflow: auto; 
 }
 
 .modal-content {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
-    width: 90%; /* Full width of the modal */
-    max-width: 400px; /* Restrict max width */
+    width: 90%; 
+    max-width: 400px; 
     border-radius: 10px;
-    text-align: center; /* Center the paragraph content */
-    position: relative; /* Ensure the content is the reference point for the close button */
-    box-shadow: none; /* Ensure no shadow */
-    overflow: hidden; /* Hide overflow */
+    text-align: center; 
+    position: relative; 
+    box-shadow: none; 
+    overflow: hidden;
 }
 
-/* Close button */
+
 .close {
     position: absolute;
-    top: 10px; /* Adjust the vertical position */
-    right: 10px; /* Adjust the horizontal position */
-    color: #000; /* Change color to black for visibility on white */
-    font-size: 24px; /* Adjust the size */
+    top: 10px; 
+    right: 10px;
+    color: #000; 
+    font-size: 24px; 
     font-weight: bold;
     transition: 0.3s;
 }
