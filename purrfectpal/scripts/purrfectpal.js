@@ -1,7 +1,7 @@
-// home.js
+
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Common functionality
+   
     const currentYear = new Date().getFullYear();
     document.getElementById('current-year').textContent = currentYear;
 
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.error("Navigation elements are missing in the DOM.");
     }
 
-    // Home page-specific functionality
+   
     const fetchCatButton = document.getElementById('fetch-cat');
 
     if (fetchCatButton) {
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(data => {
             const catContainer = document.getElementById('cat-container');
             if (catContainer) {
-                catContainer.innerHTML = ''; // Clear previous image
+                catContainer.innerHTML = ''; 
                 const img = document.createElement('img');
                 img.src = data[0].url;
                 img.alt = 'Random Cat';

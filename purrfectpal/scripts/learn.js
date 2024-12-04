@@ -1,7 +1,7 @@
-// learn.js
+
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Common functionality
+    
     const currentYear = new Date().getFullYear();
     document.getElementById('current-year').textContent = currentYear;
 
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.error("Navigation elements are missing in the DOM.");
     }
 
-    // Learn page-specific functionality
+   
     const breedsContainer = document.getElementById("breeds-container");
     const toggleButton = document.getElementById("toggle-view");
     const gridIcon = document.getElementById("grid-icon");
