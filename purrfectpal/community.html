@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Purrfect Pal- Home Page</title>
-    <meta name="description" content="Purrfect Pal Home Page">
+    <title>Purrfect Pal - Community Page</title>
+    <meta name="description" content="Purrfect Pal Community Page">
     <meta name="author" content="Venisa McAllister">
-    <meta property="og:title" content="purrfect pal website">
+    <meta property="og:title" content="Purrfect Pal website">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://nisaanne.github.io/wdd231/images/yubacitybig.webp">
     <meta property="og:url" content="https://nisaanne.github.io/wdd231/purrfectpal">
-    <meta property="og:description" content="pet cat website">
+    <meta property="og:description" content="Pet cat website">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="styles/community.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,53 +23,59 @@
 <header>
     <h1>Purrfect Pal</h1>
     <img src="images/pawprint.png" alt="paw print">
-        <a id="menu" href="#"></a>
-        <nav id="animateme">
+    <a id="menu" href="#"></a>
+    <nav id="animateme">
         <ul class="navigation">
             <li><a href="https://nisaanne.github.io/wdd231/purrfectpal">Home</a></li>
             <li><a href="https://nisaanne.github.io/wdd231/purrfectpal/learn">Learn</a></li>
-            <li><a href="https://nisaanne.github.io/wdd231/purrfectpal/community"class="active" aria-current="page">Community</a></li>
-                
-        </ul> 
-        </nav>
+            <li><a href="https://nisaanne.github.io/wdd231/purrfectpal/community" class="active" aria-current="page">Community</a></li>
+        </ul>
+    </nav>
 </header>
 <main>
     <div class="life">
-    <h2>Let's talk About...</h2>
-    <h1>Kitty Life</h1>
-   
-    <div class="image-container first">
-        <div class="cat1">
-            <h2>New Kitten Group</h2>
+        <h2>Let's talk About...</h2>
+        <h1>Kitty Life</h1>
+        <div class="image-container first">
+            <div class="cat1">
+                <h2>New Kitten Group</h2>
+            </div>
+            <div class="catimage-container">
+                <img src="images/kitten.webp" alt="Cat Image" class="catimage img-btn" data-img-src="images/kitten.webp">
+            </div>
+            <div class="cat1">
+                <h2>Online discussion</h2>
+            </div>
+            <div class="catimage-container">
+                <img src="images/kitten.webp" alt="Cat Image" class="catimage img-btn" data-img-src="images/kitten.webp">
+            </div>
+            <div class="cat1">
+                <h2>Community Activities</h2>
+            </div>
+            <div class="catimage-container">
+                <img src="images/kitten.webp" alt="Cat Image" class="catimage img-btn" data-img-src="images/kitten.webp">
+            </div>
         </div>
-        <div class="catimage-container">
-            <img src="images/kitten.webp" alt="Cat Image" class="catimage">
-        </div>
-        <div class="cat1">
-            <h2>Online discussion</h2>
-        </div>
-        <div class="catimage-container">
-            <img src="images/kitten.webp" alt="Cat Image" class="catimage">
-        </div>
-        <div class="cat1">
-            <h2>Community Activities</h2>
-        </div>
-        <div class="catimage-container">
-            <img src="images/kitten.webp" alt="Cat Image" class="catimage">
+        <div class="content-container">
+            <div class="form-container">
+                <h1 class="call">Sign up for our Community Newsletter</h1>
+                <form method="GET" action="thankyou.html">
+                    <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+                    <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+                    <label>Cell Phone <input type="tel" name="phone" autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234"></label>
+                    <label>Email <input type="email" name="email" required placeholder="john89@gmail.com" title="Your Email" autocomplete="email"></label>
+                    <input type="hidden" id="timestamp" name="timestamp" value="">
+                    <input type="submit" value="Subscribe">
+                </form>
+            </div>
         </div>
     </div>
-    <div class="content-container">
-        <div class="form-container">
-          <h1 class="call">Sign up for our Community Newsletter</h1>
-          <form method="GET" action="thankyou.html">
-            <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
-            <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
-            <label>Cell Phone <input type="tel" name="phone" autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234"></label>
-            <label>Email <input type="email" name="email" required placeholder="john89@gmail.com" title="Your Email" autocomplete="email"></label>
-            <input type="hidden" id="timestamp" name="timestamp" value="">
-            <input type="submit" value="Subscribe">
-          </form>
-        </div>
+
+    <!-- Modal Structure -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
 </main>
 <footer>
     <div class="pageinfo">
