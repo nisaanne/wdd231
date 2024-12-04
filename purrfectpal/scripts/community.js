@@ -26,8 +26,11 @@ document.addEventListener("DOMContentLoaded", () => {
     if (imgButtons && modal && modalParagraph && closeButton) {
         imgButtons.forEach(button => {
             button.addEventListener('click', event => {
+                const imgRect = event.currentTarget.getBoundingClientRect();
                 modal.style.display = 'block';
-                modalParagraph.textContent = event.currentTarget.dataset.info; // Set the paragraph content
+                modal.style.top = `${imgRect.top - modal.offsetHeight}px`; 
+                modal.style.left = `${imgRect.left}px`;
+                modalParagraph.textContent = event.currentTarget.dataset.info; 
             });
         });
 
