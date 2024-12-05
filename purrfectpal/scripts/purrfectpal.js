@@ -38,13 +38,13 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .then(response => response.json())
         .then(data => {
-            const catContainer = document.getElementById('cat-container');
-            if (catContainer) {
-                catContainer.innerHTML = ''; 
+            const catrandom = document.getElementById('catrandom');
+            if (catrandom) {
+                catrandom.innerHTML = ''; 
                 const img = document.createElement('img');
                 img.src = data[0].url;
                 img.alt = 'Random Cat';
-                catContainer.appendChild(img);
+                catrandom.appendChild(img);
             } else {
                 console.error('Element with ID "cat-container" not found.');
             }
