@@ -164,6 +164,39 @@ nav.show {
     object-fit: cover;
 }
 
+#catrandom {
+    
+    max-width: 600px; 
+    margin: 20px auto; 
+    border-radius: 10px; 
+}
+
+
+#catrandom img {
+    width: 60%; 
+    height: auto; 
+    border-radius: 10px; 
+    margin-top: 20px; 
+}
+
+
+button#fetch-cat {
+    
+    display: block; 
+    margin: 2em; 
+    width: 200px;
+    height: 50px;
+    font-size: 1em; 
+    background-color: var(--blue); 
+    color: white; 
+    border-radius: 10px; 
+    cursor: pointer; 
+}
+
+button#fetch-cat:hover {
+    background-color: var(--green); 
+}
+
 @media (min-width: 768px) {
     h1 {
         font-size: 6vw;
