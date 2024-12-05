@@ -313,6 +313,7 @@ input:-webkit-autofill {
 
 .call{
     background-color: var(--blue);
+    font-size: 40px;
 }
 
 .modal {
