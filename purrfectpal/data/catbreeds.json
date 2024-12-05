@@ -3,7 +3,7 @@
       "origin": "Thailand",
       "description": "Siamese cats are known for their striking blue eyes and sleek, short coat. They are very vocal and affectionate.", 
       "temperament": "Friendly, Social",
-      "image": "images/kitten.webp"},
+      "image": "images/siamese.webp"},
         
     { "breed": "Maine Coon",
       "origin": "United States", 
@@ -89,7 +89,7 @@
       "temperament": "Playful, Mischievous",
       "image": "images/kitten.webp"},
 
-      { "breed": "Devon Rex", 
+      { "breed": "Birmanbe", 
       "origin": "United Kingdom", 
       "description": "Curly, soft coat and large ears; known for being mischievous and playful.", 
       "temperament": "Playful, Mischievous",
