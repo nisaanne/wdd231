@@ -315,7 +315,6 @@ input:-webkit-autofill {
     background-color: var(--blue);
 }
 
-
 .modal {
     display: none; 
     position: fixed;
@@ -345,7 +344,6 @@ input:-webkit-autofill {
     box-shadow: none; 
     overflow: hidden;
 }
-
 
 .close {
     position: absolute;
@@ -408,8 +406,6 @@ input:-webkit-autofill {
         height: 8em;
     }
 
-    
-
     .image-container {
         flex-direction: row;    
     }
@@ -421,35 +417,6 @@ input:-webkit-autofill {
     .call {
         text-align: center;
         margin-bottom: 20px;
-    }
-
-    .navigation {
-        display: flex;
-        align-items: baseline;
-    }
-
-    .navigation ul {
-        display: flex; 
-        flex-direction: row;
-    }
-
-    .navigation li {
-        display: block;
-        flex: 1 1 100%;
-    }
-
-    .navigation a {
-        text-align: center;
-        padding: 1em;
-        display: block;
-    }
-
-    nav {
-        grid-template-rows: 1fr;
-    }
-
-    #menu {
-        display: none;
     }
 }
 
