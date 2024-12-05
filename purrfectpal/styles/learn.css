@@ -60,7 +60,7 @@ h1 {
 
 h2 {
     font-family: "Sofadi One"; 
-    font-size: 4vw; 
+    font-size: 2vw; 
 }
 
 header img {
@@ -196,8 +196,8 @@ nav.show {
 
 
 @media (min-width: 768px) {
-h1 {
-    font-size: 6vw;
+    h1 {
+        font-size: 6vw;
     }
 
 .navigation {
