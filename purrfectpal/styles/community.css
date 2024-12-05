@@ -406,11 +406,13 @@ input:-webkit-autofill {
         height: 8em;
     }
 
+    
+
     .image-container {
         flex-direction: row;    
     }
 
-    .form-container, .membership-levels {
+    .form-container {
         max-width: 45%;
     }
 
