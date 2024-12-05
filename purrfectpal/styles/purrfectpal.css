@@ -52,19 +52,21 @@ h1 {
     background-color: var(--yellow);
     border-color: var(--pink);
     font-family: "Sofadi One";
-    font-size: 6vw; 
-    padding: 10px;
-    margin: 10px;
-    word-break: break-word; 
+    font-size: 5vw; 
+    padding: 5px;
+    margin: 5px;
+    
 }
 
 h2{
     font-family: "Sofadi One";  
+    font-size: 30px; 
     
 }
 
 header img {
-    height: 5em;
+    height: 4em;
+    margin: 0;
 }
 
 .navigation ul.active {
