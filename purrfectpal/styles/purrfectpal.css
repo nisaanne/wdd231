@@ -48,26 +48,24 @@ main {
 }
 
 h1 {
-    color: black; 
+    color: var(black); 
     background-color: var(--yellow);
     border-color: var(--pink);
     font-family: "Sofadi One";
-    font-size: 5vw; 
-    padding: 5px;
-    margin: 5px;
-  
+    font-size: 6vw; 
+    padding: 10px;
+    margin: 10px;
+    word-break: break-word; 
 }
 
-h2 {
-    font-family: "Sofadi One"; 
-    font-size: 30px; 
+h2{
+    font-family: "Sofadi One";  
+    
 }
 
 header img {
-    height: 4em;
-    margin: 0;
+    height: 5em;
 }
-
 
 .navigation ul.active {
     display: flex; 
@@ -142,6 +140,7 @@ nav.show {
     margin: 4px 0;
     background-color: #fff;
 }
+
 .image-container {
     display: flex;
     flex-direction: column;
@@ -165,92 +164,10 @@ nav.show {
     object-fit: cover;
 }
 
-.cat1, .cat2 {
-    width: 100%;
-    max-width: 300px; 
-    padding: 10px;
-    text-align: center;
-    word-wrap: break-word;
-    white-space: normal;
-    box-sizing: border-box;
-    color: black;
-}
-.cat1 p, .cat2 p {
-    margin: 0;
-    display: inline-block;
-}
-
-.first{
-    background-color: var(--yellow)
-}
-
-body {
-    
-    text-align: center;
-   
-}
-
-h1 {
-    color: #333;
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-#cat-container img {
-    max-width: 300px; 
-    height: auto; 
-    border: 2px solid #333;
-    margin-top: 20px;
-}
-
 @media (min-width: 768px) {
     h1 {
         font-size: 6vw;
     }
-
-.navigation {
-    display: flex;
-    align-items: baseline;
-    list-style: none;
-    margin: 0 auto;
-    max-width: 760px;
-    color: black;
-    }
-
-.navigation ul {
-    display: flex; 
-    flex-direction: row;
-    display: none;
-    flex-direction: column; 
-    align-items: flex-end;
-    gap: 20px;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    }
- 
-.navigation a {
-    text-align: center;
-    padding: 1em;
-    display: block;
-    }
-
-nav {
-    grid-template-rows: 1fr;
-    }
-
-#menu {
-    display: none;
-    }
-
-header img{
-    height: 8em;
-    }
-}
 
 .image-container {
     display: flex;
@@ -298,6 +215,46 @@ header img{
     margin: 0;
     display: inline-block;
     }
+
+.navigation {
+    display: flex;
+    align-items: baseline;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+    color: black;
+    }
+
+.navigation ul {
+    display: flex; 
+    flex-direction: row;
+    display: none;
+    flex-direction: column; 
+    align-items: flex-end;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    }
+ 
+.navigation a {
+    text-align: center;
+    padding: 1em;
+    display: block;
+    }
+
+nav {
+    grid-template-rows: 1fr;
+    }
+
+#menu {
+    display: none;
+    }
+
+header img{
+    height: 8em;
+    }
+}
 
 @media (min-width: 1024px) {
     h1 {
