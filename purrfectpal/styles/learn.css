@@ -180,11 +180,14 @@ nav.show {
 
 
 .breed-image {
-    width: 20vw; 
-    height: auto;
+    width: auto; /* Adjust width automatically */
+    height: 40vh; /* Set a fixed height */
+    object-fit: cover; /* Scale the image to cover the container while maintaining aspect ratio */
     display: block;
     margin-bottom: 1rem;
+    border: 2px solid black; /* Optional: Add a border for better visibility */
 }
+
 
 
 @media (min-width: 768px) {
