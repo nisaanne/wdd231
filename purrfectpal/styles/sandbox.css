@@ -48,26 +48,24 @@ main {
 }
 
 h1 {
-    color: black; 
+    color: var(black); 
     background-color: var(--yellow);
     border-color: var(--pink);
     font-family: "Sofadi One";
-    font-size: 5vw; 
-    padding: 5px;
-    margin: 5px;
-  
+    font-size: 6vw; 
+    padding: 10px;
+    margin: 10px;
+    word-break: break-word; 
 }
 
-h2 {
-    font-family: "Sofadi One"; 
-    font-size: 2vw; 
+h2{
+    font-family: "Sofadi One";  
+    
 }
 
 header img {
-    height: 4em;
-    margin: 0;
+    height: 5em;
 }
-
 
 .navigation ul.active {
     display: flex; 
@@ -142,6 +140,8 @@ nav.show {
     margin: 4px 0;
     background-color: #fff;
 }
+
+
 .image-container {
     display: flex;
     flex-direction: column;
@@ -175,10 +175,12 @@ nav.show {
     box-sizing: border-box;
     color: black;
 }
+
 .cat1 p, .cat2 p {
     margin: 0;
     display: inline-block;
 }
+
 
 .first{
     background-color: var(--yellow)
@@ -187,7 +189,7 @@ nav.show {
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-   
+    margin: 20px;
 }
 
 h1 {
