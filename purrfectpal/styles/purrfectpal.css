@@ -65,7 +65,8 @@ h2{
 }
 
 header img {
-    height: 4em;
+    height: 50px;
+    width: 50px;
     margin: 0;
 }
 
@@ -305,16 +306,15 @@ nav {
     display: none;
     }
 
-header img{
-    height: 8em;
-    }
+    header img{
+        height: 100px;
+        width: 100px;
+        }
 }
 
 @media (min-width: 1024px) {
     h1 {
         font-size: 4vw; 
-    }
-    header img{
-        height: 10em;
-    }
+
+}
 }

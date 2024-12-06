@@ -65,10 +65,11 @@ h3{font-family: "Sofadi One";
     font-size: 40px; }
 
 
-header img {
-    height: 4em;
-    margin: 0;
-}
+    header img {
+        height: 50px;
+        width: 50px;
+        margin: 0;
+    }
 
 .navigation ul.active {
     display: flex; 
@@ -414,8 +415,9 @@ footer{
     }
 
     header img{
-        height: 8em;
-    }
+        height: 100px;
+        width: 100px;
+        }
 
     .image-container {
         flex-direction: row;    
@@ -434,12 +436,9 @@ footer{
 @media (min-width: 1024px) {
     h1 {
         font-size: 4vw; 
-    }
-    header img {
-        height: 10em;
-    }
-  
+
 }
 
 
 
+}
