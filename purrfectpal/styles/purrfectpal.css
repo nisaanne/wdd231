@@ -211,8 +211,8 @@ button#fetch-cat:hover {
     margin: 20px;
    }
 
-.additional-links{
-    justify-content: end;
+footer{
+    justify-content: space-evenly;
 }
 
 .additional-links button{

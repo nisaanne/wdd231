@@ -188,7 +188,13 @@ nav.show {
     border: 2px solid black; /* Optional: Add a border for better visibility */
 }
 
+footer{
+    justify-content: space-evenly;
+}
 
+.additional-links button{
+    background-color: var(--orange);
+}
 
 @media (min-width: 768px) {
   .breed-grid{
