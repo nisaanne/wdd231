@@ -147,7 +147,6 @@ nav.show {
     display: flex;
     flex-direction: column;
     margin: 20px;
-    align-items: space-around;
     justify-content: center;
     width: 100%;
     gap: 20px; 
