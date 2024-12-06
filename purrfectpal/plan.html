@@ -3,20 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Purrfect pal</title>
+    <title>Purrfect Pal - Home Page</title>
+    <meta name="description" content="Purrfect Pal Home Page">
     <meta name="author" content="Venisa McAllister">
-    <meta name="description" content="pet website homepage plan">
+    <meta property="og:title" content="Purrfect Pal website">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://nisaanne.github.io/wdd231/images/kitten.webp">
+    <meta property="og:url" content="https://nisaanne.github.io/wdd231/purrfectpal">
+    <meta property="og:description" content="Pet cat website">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="styles/purrfectpal.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap" rel="stylesheet">
+    <script src="scripts/purrfectpal.js" defer></script>
+    <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
-<header>  
-<h1>Purrfect Pal</h1>
-<img src="images/pawprint.png" alt="paw print">
-
-</header>
+    <header>
+        <h1>Purrfect Pal</h1>
+        <img src="images/pawprint.png" alt="paw print">
+        <a id="menu" href="#"></a>
+        <nav id="animateme">
+            <ul class="navigation">
+                <li><a href="https://nisaanne.github.io/wdd231/purrfectpal" class="active" aria-current="page">Home</a></li>
+                <li><a href="https://nisaanne.github.io/wdd231/purrfectpal/learn">Learn</a></li>
+                <li><a href="https://nisaanne.github.io/wdd231/purrfectpal/community">Community</a></li>
+            </ul>
+        </nav>
+    </header>
 <p>This website is dedicated to breeds of housecats and their care. The website name shows that the website is about cats that are companions.</p>
 <p>Scenarios:
     What are the most popular cat breeds?
@@ -41,17 +56,16 @@
    
 </p>
 <p> 
-    <img src="images/wireframe.png" alt="colors">  
+    <img src="images/wireframenew.jpg" alt="colors">  
 </p>
 </div>
-<button class="first">Click Me!</button>
+
 <footer>
-   
-    </div>
     <div class="pageinfo">
-        <p>&#127794; Venisa McAllister California, USA &#x1F30A;</p>
-        
+        <p>&copy; <span id="current-year"></span> &#127794; Venisa McAllister California, USA &#x1F30A;</p>
+        <p><span id="lastModified"></span></p>
     </div>
+  
 </footer>
 </body>
 </html>
