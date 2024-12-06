@@ -167,12 +167,13 @@ nav.show {
 }
 
 #catrandom {
-    
-    max-width: 600px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    max-width: 600px;
     margin: 20px auto; 
-    border-radius: 10px; 
+    border-radius: 10px;
 }
-
 
 #catrandom img {
     width: 60%; 
@@ -180,6 +181,7 @@ nav.show {
     border-radius: 10px; 
     margin-top: 20px; 
 }
+
 
 
 button#fetch-cat {
@@ -198,6 +200,16 @@ button#fetch-cat {
 button#fetch-cat:hover {
     background-color: var(--green); 
 }
+
+
+.chooser {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+   }
+
 
 @media (min-width: 768px) {
     h1 {
