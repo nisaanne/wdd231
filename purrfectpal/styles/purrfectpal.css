@@ -210,6 +210,9 @@ button#fetch-cat:hover {
     border-radius: 10px;
    }
 
+.results{
+    background-color: var(--blue);
+}
 
 @media (min-width: 768px) {
     h1 {
