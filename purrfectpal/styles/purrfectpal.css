@@ -48,7 +48,7 @@ main {
 }
 
 h1 {
-    color: var(black); 
+    color: black; 
     background-color: var(--yellow);
     border-color: var(--pink);
     font-family: "Sofadi One";
